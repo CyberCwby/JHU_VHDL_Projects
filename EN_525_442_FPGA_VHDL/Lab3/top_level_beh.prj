@@ -1,0 +1,7 @@
+vhdl work "twoBitUpCounter.vhd"
+vhdl work "seg7_hex.vhd"
+vhdl work "pulseGenerator.vhd"
+vhdl work "flipFlop.vhd"
+vhdl work "shiftRegister.vhdl"
+vhdl work "seg7_driver.vhd"
+vhdl work "top_level.vhd"

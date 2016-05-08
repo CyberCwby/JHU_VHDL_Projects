@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/VHDL Projects/Lab6/lab06_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="lab06_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="40" />
+   <wvobject fp_name="/lab06_tb/pushbuttons" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pushbuttons[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pushbuttons[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/clk_50" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_50</obj_property>
+      <obj_property name="ObjectShortName">clk_50</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/seg7" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seg7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg7[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/an" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">an[3:0]</obj_property>
+      <obj_property name="ObjectShortName">an[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/ram_adr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_adr[23:1]</obj_property>
+      <obj_property name="ObjectShortName">ram_adr[23:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/ram_oeb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_oeb</obj_property>
+      <obj_property name="ObjectShortName">ram_oeb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/ram_web" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_web</obj_property>
+      <obj_property name="ObjectShortName">ram_web</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/ramadv" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ramadv</obj_property>
+      <obj_property name="ObjectShortName">ramadv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/ramclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ramclk</obj_property>
+      <obj_property name="ObjectShortName">ramclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/ramcre" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ramcre</obj_property>
+      <obj_property name="ObjectShortName">ramcre</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/ram_ceb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_ceb</obj_property>
+      <obj_property name="ObjectShortName">ram_ceb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/ram_lb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_lb</obj_property>
+      <obj_property name="ObjectShortName">ram_lb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/ram_ub" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_ub</obj_property>
+      <obj_property name="ObjectShortName">ram_ub</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/ram_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/curstate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">curstate</obj_property>
+      <obj_property name="ObjectShortName">curstate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/cntr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cntr[10:0]</obj_property>
+      <obj_property name="ObjectShortName">cntr[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/debouncedpb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">debouncedpb[1:0]</obj_property>
+      <obj_property name="ObjectShortName">debouncedpb[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/startfromfsm" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">startfromfsm</obj_property>
+      <obj_property name="ObjectShortName">startfromfsm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/donetofsm" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">donetofsm</obj_property>
+      <obj_property name="ObjectShortName">donetofsm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/startfromfsm" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">startfromfsm</obj_property>
+      <obj_property name="ObjectShortName">startfromfsm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/startfsmwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">startfsmwrite</obj_property>
+      <obj_property name="ObjectShortName">startfsmwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/writetoram" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writetoram</obj_property>
+      <obj_property name="ObjectShortName">writetoram</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/donefsmwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">donefsmwrite</obj_property>
+      <obj_property name="ObjectShortName">donefsmwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/perfread" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">perfread</obj_property>
+      <obj_property name="ObjectShortName">perfread</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/pulseforread" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pulseforread</obj_property>
+      <obj_property name="ObjectShortName">pulseforread</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/PULSE4HZ/clk_50" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_50</obj_property>
+      <obj_property name="ObjectShortName">clk_50</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/PULSE4HZ/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/PULSE4HZ/enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/PULSE4HZ/maxcounter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">maxcounter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">maxcounter[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/PULSE4HZ/pulse" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pulse</obj_property>
+      <obj_property name="ObjectShortName">pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/PULSE4HZ/cntrsig" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cntrsig[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cntrsig[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/PULSE4HZ/clear" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clear</obj_property>
+      <obj_property name="ObjectShortName">clear</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/READADDR/clk50" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk50</obj_property>
+      <obj_property name="ObjectShortName">clk50</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/READADDR/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/READADDR/en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/READADDR/cntr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cntr[10:0]</obj_property>
+      <obj_property name="ObjectShortName">cntr[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/READADDR/pulse" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pulse</obj_property>
+      <obj_property name="ObjectShortName">pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/READADDR/maxcount" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">maxcount[10:0]</obj_property>
+      <obj_property name="ObjectShortName">maxcount[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/READADDR/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[10:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab06_tb/lab6_top_0/sigtodisplay" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sigtodisplay[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sigtodisplay[15:0]</obj_property>
+   </wvobject>
+</wave_config>

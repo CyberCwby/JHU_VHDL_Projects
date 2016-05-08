@@ -1,0 +1,29 @@
+Command line:
+   lab4_top_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55368
+
+Tue Jun 23 18:53:20 2015
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 361.984 Meg
+
+ Total Signals          : 55
+ Total Nets             : 199
+ Total Signal Drivers   : 30
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 30
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 682
+Total Line Count : 67
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 361.984 Meg
+
+Tue Jun 23 18:55:35 2015
+

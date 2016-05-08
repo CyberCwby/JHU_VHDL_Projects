@@ -1,0 +1,5 @@
+set -tmpdir "D:/VHDL Projects/Lab4/xst/projnav.tmp"
+set -xsthdpdir "D:/VHDL Projects/Lab4/xst"
+elaborate
+-ifn seg7_driver.prj
+-ifmt mixed

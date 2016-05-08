@@ -1,0 +1,4 @@
+vhdl work "twoBitUpCounter.vhd"
+vhdl work "seg7_hex.vhd"
+vhdl work "pulseGenerator.vhd"
+vhdl work "seg7_driver.vhd"

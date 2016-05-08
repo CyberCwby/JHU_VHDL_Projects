@@ -1,0 +1,107 @@
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_topLevel.twx lab8_topLevel.ncd -o lab8_topLevel.twr lab8_topLevel.pcf -ucf lab8_constraints.ucf 
+bitgen -intstyle ise -f lab8_topLevel.ut lab8_topLevel.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_topLevel.twx lab8_topLevel.ncd -o lab8_topLevel.twr lab8_topLevel.pcf -ucf lab8_constraints.ucf 
+bitgen -intstyle ise -f lab8_topLevel.ut lab8_topLevel.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_topLevel.twx lab8_topLevel.ncd -o lab8_topLevel.twr lab8_topLevel.pcf -ucf lab8_constraints.ucf 
+bitgen -intstyle ise -f lab8_topLevel.ut lab8_topLevel.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_topLevel.twx lab8_topLevel.ncd -o lab8_topLevel.twr lab8_topLevel.pcf -ucf lab8_constraints.ucf 
+bitgen -intstyle ise -f lab8_topLevel.ut lab8_topLevel.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_topLevel.twx lab8_topLevel.ncd -o lab8_topLevel.twr lab8_topLevel.pcf -ucf lab8_constraints.ucf 
+bitgen -intstyle ise -f lab8_topLevel.ut lab8_topLevel.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_topLevel.twx lab8_topLevel.ncd -o lab8_topLevel.twr lab8_topLevel.pcf -ucf lab8_constraints.ucf 
+bitgen -intstyle ise -f lab8_topLevel.ut lab8_topLevel.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+bitgen -intstyle ise -f lab8_topLevel.ut lab8_topLevel.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_topLevel.twx lab8_topLevel.ncd -o lab8_topLevel.twr lab8_topLevel.pcf -ucf lab8_constraints.ucf 
+bitgen -intstyle ise -f lab8_topLevel.ut lab8_topLevel.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab8/lab8_topLevel.xst" -ofn "D:/VHDL Projects/Lab8/lab8_topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lab8_constraints.ucf -p xc3s500e-fg320-4 "lab8_topLevel.ngc" lab8_topLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab8_topLevel_map.ncd lab8_topLevel.ngd lab8_topLevel.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_topLevel_map.ncd lab8_topLevel.ncd lab8_topLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_topLevel.twx lab8_topLevel.ncd -o lab8_topLevel.twr lab8_topLevel.pcf -ucf lab8_constraints.ucf 
+bitgen -intstyle ise -f lab8_topLevel.ut lab8_topLevel.ncd 

@@ -1,0 +1,29 @@
+Command line:
+   lab8_topLevel_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52968
+
+Wed Jul 29 20:35:13 2015
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 362.668 Meg
+
+ Total Signals          : 399
+ Total Nets             : 3159
+ Total Signal Drivers   : 203
+ Total Blocks           : 60
+ Total Primitive Blocks : 37
+ Total Processes        : 138
+ Total Traceable Variables  : 442
+ Total Scalar Nets and Variables : 12100
+Total Line Count : 866
+
+ Total Simulation Time: 0.28125 sec
+
+ Current Memory Usage: 362.668 Meg
+
+Thu Jul 30 16:38:37 2015
+

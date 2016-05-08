@@ -1,0 +1,14 @@
+AR upcounter behavioral "D:/VHDL Projects/Lab4/upCounter.vhd" sub00/vhpl11 1435017104
+EN seg7_hex NULL "D:/VHDL Projects/Lab4/seg7_hex.vhd" sub00/vhpl02 1435017097
+EN upcounter NULL "D:/VHDL Projects/Lab4/upCounter.vhd" sub00/vhpl10 1435017103
+AR seg7_hex behavioral "D:/VHDL Projects/Lab4/seg7_hex.vhd" sub00/vhpl03 1435017098
+EN sram_d NULL "D:/VHDL Projects/Lab4/sram_d.vhd" sub00/vhpl00 1434222539
+EN seg7_driver NULL "D:/VHDL Projects/Lab4/seg7_driver.vhd" sub00/vhpl08 1435017105
+EN twobitupcounter NULL "D:/VHDL Projects/Lab4/twoBitUpCounter.vhd" sub00/vhpl06 1435017101
+AR seg7_driver behavioral "D:/VHDL Projects/Lab4/seg7_driver.vhd" sub00/vhpl09 1435017106
+AR lab4_top behavioral "D:/VHDL Projects/Lab4/lab4_top.vhd" sub00/vhpl13 1435017108
+AR twobitupcounter behavioral "D:/VHDL Projects/Lab4/twoBitUpCounter.vhd" sub00/vhpl07 1435017102
+AR pulsegenerator behavioral "D:/VHDL Projects/Lab4/pulseGenerator.vhd" sub00/vhpl05 1435017100
+EN lab4_top NULL "D:/VHDL Projects/Lab4/lab4_top.vhd" sub00/vhpl12 1435017107
+EN pulsegenerator NULL "D:/VHDL Projects/Lab4/pulseGenerator.vhd" sub00/vhpl04 1435017099
+AR sram_d behavior "D:/VHDL Projects/Lab4/sram_d.vhd" sub00/vhpl01 1434222540

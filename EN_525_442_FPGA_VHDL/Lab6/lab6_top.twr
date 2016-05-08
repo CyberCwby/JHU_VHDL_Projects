@@ -1,0 +1,286 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf
+-ucf lab6_constraints.ucf
+
+Design file:              lab6_top.ncd
+Physical constraint file: lab6_top.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_clk_50 = PERIOD TIMEGRP "clk_50" 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 18305 paths analyzed, 531 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.767ns.
+--------------------------------------------------------------------------------
+
+Paths for end point RAM_WEb (SLICE_X2Y30.G3), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     5.805ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               curstate_FSM_FFd1 (FF)
+  Destination:          RAM_WEb (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.195ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_BUFGP rising at 0.000ns
+  Destination Clock:    clk_50_BUFGP falling at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: curstate_FSM_FFd1 to RAM_WEb
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y50.YQ      Tcko                  0.652   curstate_FSM_FFd2
+                                                       curstate_FSM_FFd1
+    SLICE_X2Y30.G3       net (fanout=55)       2.651   curstate_FSM_FFd1
+    SLICE_X2Y30.CLK      Tgck                  0.892   RAM_WEb_OBUF
+                                                       RAM_WEB_int1
+                                                       RAM_WEb
+    -------------------------------------------------  ---------------------------
+    Total                                      4.195ns (1.544ns logic, 2.651ns route)
+                                                       (36.8% logic, 63.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point RAM_WEb (SLICE_X2Y30.G1), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     6.571ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               curstate_FSM_FFd2 (FF)
+  Destination:          RAM_WEb (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.429ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_BUFGP rising at 0.000ns
+  Destination Clock:    clk_50_BUFGP falling at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: curstate_FSM_FFd2 to RAM_WEb
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y50.XQ      Tcko                  0.592   curstate_FSM_FFd2
+                                                       curstate_FSM_FFd2
+    SLICE_X2Y30.G1       net (fanout=31)       1.945   curstate_FSM_FFd2
+    SLICE_X2Y30.CLK      Tgck                  0.892   RAM_WEb_OBUF
+                                                       RAM_WEB_int1
+                                                       RAM_WEb
+    -------------------------------------------------  ---------------------------
+    Total                                      3.429ns (1.484ns logic, 1.945ns route)
+                                                       (43.3% logic, 56.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point RAM_WEb (SLICE_X2Y30.G4), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     7.972ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               WRITEADDR/counter_1 (FF)
+  Destination:          RAM_WEb (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      2.028ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_BUFGP rising at 0.000ns
+  Destination Clock:    clk_50_BUFGP falling at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: WRITEADDR/counter_1 to RAM_WEb
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y31.YQ       Tcko                  0.587   WRITEADDR/counter<0>
+                                                       WRITEADDR/counter_1
+    SLICE_X2Y30.G4       net (fanout=3)        0.549   WRITEADDR/counter<1>
+    SLICE_X2Y30.CLK      Tgck                  0.892   RAM_WEb_OBUF
+                                                       RAM_WEB_int1
+                                                       RAM_WEb
+    -------------------------------------------------  ---------------------------
+    Total                                      2.028ns (1.479ns logic, 0.549ns route)
+                                                       (72.9% logic, 27.1% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk_50 = PERIOD TIMEGRP "clk_50" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point SEG7DRVR/CURRCHAR/cntr2Sig_0 (SLICE_X41Y47.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.262ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               SEG7DRVR/CURRCHAR/cntr2Sig_0 (FF)
+  Destination:          SEG7DRVR/CURRCHAR/cntr2Sig_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.262ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_BUFGP rising at 20.000ns
+  Destination Clock:    clk_50_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: SEG7DRVR/CURRCHAR/cntr2Sig_0 to SEG7DRVR/CURRCHAR/cntr2Sig_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X41Y47.XQ      Tcko                  0.473   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_0
+    SLICE_X41Y47.BX      net (fanout=14)       0.696   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+    SLICE_X41Y47.CLK     Tckdi       (-Th)    -0.093   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.262ns (0.566ns logic, 0.696ns route)
+                                                       (44.8% logic, 55.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point SEG7DRVR/CURRCHAR/cntr2Sig_1 (SLICE_X41Y47.G4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.359ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               SEG7DRVR/CURRCHAR/cntr2Sig_1 (FF)
+  Destination:          SEG7DRVR/CURRCHAR/cntr2Sig_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.359ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_BUFGP rising at 20.000ns
+  Destination Clock:    clk_50_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: SEG7DRVR/CURRCHAR/cntr2Sig_1 to SEG7DRVR/CURRCHAR/cntr2Sig_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X41Y47.YQ      Tcko                  0.470   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_1
+    SLICE_X41Y47.G4      net (fanout=9)        0.373   SEG7DRVR/CURRCHAR/cntr2Sig<1>
+    SLICE_X41Y47.CLK     Tckg        (-Th)    -0.516   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/Mcount_cntr2Sig_xor<1>11
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.359ns (0.986ns logic, 0.373ns route)
+                                                       (72.6% logic, 27.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point SEG7DRVR/CURRCHAR/cntr2Sig_1 (SLICE_X41Y47.G3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.412ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               SEG7DRVR/CURRCHAR/cntr2Sig_0 (FF)
+  Destination:          SEG7DRVR/CURRCHAR/cntr2Sig_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.412ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_BUFGP rising at 20.000ns
+  Destination Clock:    clk_50_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: SEG7DRVR/CURRCHAR/cntr2Sig_0 to SEG7DRVR/CURRCHAR/cntr2Sig_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X41Y47.XQ      Tcko                  0.473   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_0
+    SLICE_X41Y47.G3      net (fanout=14)       0.423   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+    SLICE_X41Y47.CLK     Tckg        (-Th)    -0.516   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/Mcount_cntr2Sig_xor<1>11
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.412ns (0.989ns logic, 0.423ns route)
+                                                       (70.0% logic, 30.0% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk_50 = PERIOD TIMEGRP "clk_50" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.596ns (Trpw)
+  Physical resource: PULSE4HZ/cntrSig<0>/SR
+  Logical resource: PULSE4HZ/cntrSig_0/SR
+  Location pin: SLICE_X13Y44.SR
+  Clock network: PB0DB/debouncedSignal
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 1.596ns (Trpw)
+  Physical resource: PULSE4HZ/cntrSig<0>/SR
+  Logical resource: PULSE4HZ/cntrSig_0/SR
+  Location pin: SLICE_X13Y44.SR
+  Clock network: PB0DB/debouncedSignal
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.596ns (Trpw)
+  Physical resource: PULSE4HZ/cntrSig<0>/SR
+  Logical resource: PULSE4HZ/cntrSig_1/SR
+  Location pin: SLICE_X13Y44.SR
+  Clock network: PB0DB/debouncedSignal
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk_50
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_50         |    8.767|         |    4.195|         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 18305 paths, 0 nets, and 599 connections
+
+Design statistics:
+   Minimum period:   8.767ns{1}   (Maximum frequency: 114.064MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Aug 11 20:17:27 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 176 MB
+
+
+

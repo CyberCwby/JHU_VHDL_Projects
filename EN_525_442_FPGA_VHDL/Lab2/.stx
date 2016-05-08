@@ -1,0 +1,44 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/VHDL Projects/Lab2/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Parameter xsthdpdir set to D:/VHDL Projects/Lab2/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/VHDL Projects/Lab2/top_level.vhd" in Library work.
+ERROR:HDLParsers:3011 - "D:/VHDL Projects/Lab2/top_level.vhd" Line 21. End Identifier lab1_top does not match declaration, lab2_top.
+ERROR:HDLParsers:3010 - "D:/VHDL Projects/Lab2/top_level.vhd" Line 23. Entity lab2_top does not exist.
+ERROR:HDLParsers:3312 - "D:/VHDL Projects/Lab2/top_level.vhd" Line 26. Undefined symbol 'pushButtons'.
+ERROR:HDLParsers:1209 - "D:/VHDL Projects/Lab2/top_level.vhd" Line 26. pushButtons: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/VHDL Projects/Lab2/top_level.vhd" Line 28. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/VHDL Projects/Lab2/top_level.vhd" Line 29. Undefined symbol 'anodes'.
+ERROR:HDLParsers:808 - "D:/VHDL Projects/Lab2/top_level.vhd" Line 30. = can not have such operands in this context.
+ERROR:HDLParsers:1209 - "D:/VHDL Projects/Lab2/top_level.vhd" Line 31. anodes: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/VHDL Projects/Lab2/top_level.vhd" Line 32. = can not have such operands in this context.
+ERROR:HDLParsers:164 - "D:/VHDL Projects/Lab2/top_level.vhd" Line 36. parse error, unexpected PROCESS, expecting IF
+WARNING:HDLParsers:3481 - Library work has no units. Did not save reference file "D:/VHDL Projects/Lab2/xst/work/hdllib.ref" for it.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.49 secs
+ 
+--> 
+
+Total memory usage is 200064 kilobytes
+
+Number of errors   :   10 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

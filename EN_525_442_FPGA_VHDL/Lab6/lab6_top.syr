@@ -1,0 +1,582 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: lab6_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "lab6_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "lab6_top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : lab6_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/VHDL Projects/Lab6/seg7_hex.vhd" in Library work.
+Architecture behavioral of Entity seg7_hex is up to date.
+Compiling vhdl file "D:/VHDL Projects/Lab6/pulseGenerator.vhd" in Library work.
+Architecture behavioral of Entity pulsegenerator is up to date.
+Compiling vhdl file "D:/VHDL Projects/Lab6/twoBitUpCounter.vhd" in Library work.
+Architecture behavioral of Entity twobitupcounter is up to date.
+Compiling vhdl file "D:/VHDL Projects/Lab6/debouncer.vhd" in Library work.
+Architecture behavioral of Entity debouncer is up to date.
+Compiling vhdl file "D:/VHDL Projects/Lab6/seg7_driver.vhd" in Library work.
+Architecture behavioral of Entity seg7_driver is up to date.
+Compiling vhdl file "D:/VHDL Projects/Lab6/upCounter.vhd" in Library work.
+Architecture behavioral of Entity upcounter is up to date.
+Compiling vhdl file "D:/VHDL Projects/Lab6/readCounter.vhd" in Library work.
+Architecture behavioral of Entity readcounter is up to date.
+Compiling vhdl file "D:/VHDL Projects/Lab6/lab6_top.vhd" in Library work.
+Architecture behavioral of Entity lab6_top is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <lab6_top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <debouncer> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <seg7_driver> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <upCounter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <pulseGenerator> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <readCounter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <seg7_hex> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <twoBitUpCounter> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <lab6_top> in library <work> (Architecture <behavioral>).
+Entity <lab6_top> analyzed. Unit <lab6_top> generated.
+
+Analyzing Entity <debouncer> in library <work> (Architecture <Behavioral>).
+Entity <debouncer> analyzed. Unit <debouncer> generated.
+
+Analyzing Entity <seg7_driver> in library <work> (Architecture <Behavioral>).
+Entity <seg7_driver> analyzed. Unit <seg7_driver> generated.
+
+Analyzing Entity <seg7_hex> in library <work> (Architecture <Behavioral>).
+Entity <seg7_hex> analyzed. Unit <seg7_hex> generated.
+
+Analyzing Entity <twoBitUpCounter> in library <work> (Architecture <Behavioral>).
+Entity <twoBitUpCounter> analyzed. Unit <twoBitUpCounter> generated.
+
+Analyzing Entity <upCounter> in library <work> (Architecture <Behavioral>).
+Entity <upCounter> analyzed. Unit <upCounter> generated.
+
+Analyzing Entity <pulseGenerator> in library <work> (Architecture <Behavioral>).
+Entity <pulseGenerator> analyzed. Unit <pulseGenerator> generated.
+
+Analyzing Entity <readCounter> in library <work> (Architecture <Behavioral>).
+Entity <readCounter> analyzed. Unit <readCounter> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <debouncer>.
+    Related source file is "D:/VHDL Projects/Lab6/debouncer.vhd".
+    Found 1-bit register for signal <debouncedSignal>.
+    Found 23-bit up counter for signal <counter>.
+    Found 23-bit comparator less for signal <counter$cmp_lt0000> created at line 29.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <debouncer> synthesized.
+
+
+Synthesizing Unit <upCounter>.
+    Related source file is "D:/VHDL Projects/Lab6/upCounter.vhd".
+    Found 11-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <upCounter> synthesized.
+
+
+Synthesizing Unit <pulseGenerator>.
+    Related source file is "D:/VHDL Projects/Lab6/pulseGenerator.vhd".
+    Found 24-bit comparator equal for signal <clear$cmp_eq0000> created at line 41.
+    Found 24-bit up counter for signal <cntrSig>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Comparator(s).
+Unit <pulseGenerator> synthesized.
+
+
+Synthesizing Unit <readCounter>.
+    Related source file is "D:/VHDL Projects/Lab6/readCounter.vhd".
+    Found 9-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <readCounter> synthesized.
+
+
+Synthesizing Unit <seg7_hex>.
+    Related source file is "D:/VHDL Projects/Lab6/seg7_hex.vhd".
+    Found 16x7-bit ROM for signal <seg7>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <seg7_hex> synthesized.
+
+
+Synthesizing Unit <twoBitUpCounter>.
+    Related source file is "D:/VHDL Projects/Lab6/twoBitUpCounter.vhd".
+    Found 2-bit up counter for signal <cntr2Sig>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <twoBitUpCounter> synthesized.
+
+
+Synthesizing Unit <seg7_driver>.
+    Related source file is "D:/VHDL Projects/Lab6/seg7_driver.vhd".
+    Found 4-bit register for signal <anodes>.
+    Found 1-of-4 decoder for signal <anodes$mux0004>.
+    Found 4-bit register for signal <charToDisplay>.
+    Found 4-bit 4-to-1 multiplexer for signal <charToDisplay$mux0000>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <seg7_driver> synthesized.
+
+
+Synthesizing Unit <lab6_top>.
+    Related source file is "D:/VHDL Projects/Lab6/lab6_top.vhd".
+WARNING:Xst:646 - Signal <cntr<10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <curstate>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk_50                    (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | writeram                                       |
+    | Power Up State     | writeram                                       |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <RAM_WEb>.
+    Found 16-bit tristate buffer for signal <RAM_data>.
+    Found 16-bit register for signal <lastFromRAM>.
+    Found 2-bit comparator lessequal for signal <RAM_WEB_int$cmp_le0000> created at line 135.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  16 Tristate(s).
+Unit <lab6_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 7
+ 11-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 23-bit up counter                                     : 2
+ 24-bit up counter                                     : 2
+ 9-bit up counter                                      : 1
+# Registers                                            : 6
+ 1-bit register                                        : 3
+ 16-bit register                                       : 1
+ 4-bit register                                        : 2
+# Comparators                                          : 5
+ 2-bit comparator lessequal                            : 1
+ 23-bit comparator less                                : 2
+ 24-bit comparator equal                               : 2
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+# Tristates                                            : 1
+ 16-bit tristate buffer                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <curstate/FSM> on signal <curstate[1:2]> with gray encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ writeram  | 00
+ donewrite | 01
+ readram   | 11
+ doneread  | 10
+-----------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 7
+ 11-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 23-bit up counter                                     : 2
+ 24-bit up counter                                     : 2
+ 9-bit up counter                                      : 1
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+# Comparators                                          : 5
+ 2-bit comparator lessequal                            : 1
+ 23-bit comparator less                                : 2
+ 24-bit comparator equal                               : 2
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <lab6_top> ...
+
+Optimizing unit <seg7_driver> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block lab6_top, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 145
+ Flip-Flops                                            : 145
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : lab6_top.ngr
+Top Level Output File Name         : lab6_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 61
+
+Cell Usage :
+# BELS                             : 499
+#      GND                         : 1
+#      INV                         : 15
+#      LUT1                        : 70
+#      LUT2                        : 34
+#      LUT3                        : 75
+#      LUT3_L                      : 1
+#      LUT4                        : 41
+#      LUT4_L                      : 1
+#      MUXCY                       : 142
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 114
+# FlipFlops/Latches                : 145
+#      FD_1                        : 1
+#      FDC                         : 2
+#      FDCE                        : 78
+#      FDE                         : 16
+#      FDRE                        : 48
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 60
+#      IBUF                        : 2
+#      IOBUF                       : 16
+#      OBUF                        : 42
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      124  out of   4656     2%  
+ Number of Slice Flip Flops:            145  out of   9312     1%  
+ Number of 4 input LUTs:                237  out of   9312     2%  
+ Number of IOs:                          61
+ Number of bonded IOBs:                  61  out of    232    26%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_50                             | BUFGP                  | 145   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------+-------------------------+-------+
+Control Signal                                | Buffer(FF name)         | Load  |
+----------------------------------------------+-------------------------+-------+
+PB0DB/debouncedSignal(PB0DB/debouncedSignal:Q)| NONE(PULSE4HZ/cntrSig_0)| 80    |
+----------------------------------------------+-------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.824ns (Maximum Frequency: 127.809MHz)
+   Minimum input arrival time before clock: 4.505ns
+   Maximum output required time after clock: 7.038ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_50'
+  Clock period: 7.824ns (frequency: 127.809MHz)
+  Total number of paths / destination ports: 18305 / 261
+-------------------------------------------------------------------------
+Delay:               7.824ns (Levels of Logic = 32)
+  Source:            SEG7DRVR/PULSE1KHZGEN/cntrSig_7 (FF)
+  Destination:       SEG7DRVR/PULSE1KHZGEN/cntrSig_23 (FF)
+  Source Clock:      clk_50 rising
+  Destination Clock: clk_50 rising
+
+  Data Path: SEG7DRVR/PULSE1KHZGEN/cntrSig_7 to SEG7DRVR/PULSE1KHZGEN/cntrSig_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.591   0.622  SEG7DRVR/PULSE1KHZGEN/cntrSig_7 (SEG7DRVR/PULSE1KHZGEN/cntrSig_7)
+     LUT4:I0->O            1   0.704   0.000  SEG7DRVR/pulse_wg_lut<0> (SEG7DRVR/pulse_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  SEG7DRVR/pulse_wg_cy<0> (SEG7DRVR/pulse_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/pulse_wg_cy<1> (SEG7DRVR/pulse_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/pulse_wg_cy<2> (SEG7DRVR/pulse_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/pulse_wg_cy<3> (SEG7DRVR/pulse_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/pulse_wg_cy<4> (SEG7DRVR/pulse_wg_cy<4>)
+     MUXCY:CI->O          35   0.331   1.298  SEG7DRVR/pulse_wg_cy<5> (SEG7DRVR/pulse)
+     LUT3:I2->O            1   0.704   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_lut<0> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<0> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<1> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<2> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<3> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<4> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<5> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<6> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<7> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<8> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<9> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<10> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<11> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<12> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<13> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<14> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<15> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<16> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<17> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<18> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<19> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<20> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<21> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<21>)
+     MUXCY:CI->O           0   0.059   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<22> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_cy<22>)
+     XORCY:CI->O           1   0.804   0.000  SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig_xor<23> (SEG7DRVR/PULSE1KHZGEN/Mcount_cntrSig23)
+     FDCE:D                    0.308          SEG7DRVR/PULSE1KHZGEN/cntrSig_23
+    ----------------------------------------
+    Total                      7.824ns (5.904ns logic, 1.920ns route)
+                                       (75.5% logic, 24.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_50'
+  Total number of paths / destination ports: 80 / 68
+-------------------------------------------------------------------------
+Offset:              4.505ns (Levels of Logic = 2)
+  Source:            pushButtons<0> (PAD)
+  Destination:       PB0DB/debouncedSignal (FF)
+  Destination Clock: clk_50 rising
+
+  Data Path: pushButtons<0> to PB0DB/debouncedSignal
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  pushButtons_0_IBUF (pushButtons_0_IBUF)
+     INV:I->O             24   0.704   1.252  PB0DB/bouncySignal_inv1_INV_0 (PB0DB/bouncySignal_inv)
+     FDRE:R                    0.911          PB0DB/debouncedSignal
+    ----------------------------------------
+    Total                      4.505ns (2.833ns logic, 1.672ns route)
+                                       (62.9% logic, 37.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_50'
+  Total number of paths / destination ports: 125 / 37
+-------------------------------------------------------------------------
+Offset:              7.038ns (Levels of Logic = 2)
+  Source:            curstate_FSM_FFd2 (FF)
+  Destination:       RAM_data<15> (PAD)
+  Source Clock:      clk_50 rising
+
+  Data Path: curstate_FSM_FFd2 to RAM_data<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             31   0.591   1.437  curstate_FSM_FFd2 (curstate_FSM_FFd2)
+     LUT2:I0->O           16   0.704   1.034  curstate_FSM_Out21 (sigToWrite<10>)
+     IOBUF:I->IO               3.272          RAM_data_15_IOBUF (RAM_data<15>)
+    ----------------------------------------
+    Total                      7.038ns (4.567ns logic, 2.471ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.97 secs
+ 
+--> 
+
+Total memory usage is 247644 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

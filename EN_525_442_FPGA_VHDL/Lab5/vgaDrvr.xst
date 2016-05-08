@@ -1,0 +1,5 @@
+set -tmpdir "D:/VHDL Projects/Lab5/xst/projnav.tmp"
+set -xsthdpdir "D:/VHDL Projects/Lab5/xst"
+elaborate
+-ifn vgaDrvr.prj
+-ifmt mixed

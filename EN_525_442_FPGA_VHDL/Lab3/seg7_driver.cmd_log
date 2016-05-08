@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab3/seg7_driver.xst" -ofn "D:/VHDL Projects/Lab3/seg7_driver.syr" 

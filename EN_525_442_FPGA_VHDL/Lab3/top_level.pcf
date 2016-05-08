@@ -1,0 +1,68 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Aug 11 20:26:44 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk_50" LOCATE = SITE "B8" LEVEL 1;
+COMP "sliderSwitches<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "sliderSwitches<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "sliderSwitches<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "sliderSwitches<3>" LOCATE = SITE "K17" LEVEL 1;
+COMP "anodes<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "anodes<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "anodes<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "anodes<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "seg7<0>" LOCATE = SITE "L18" LEVEL 1;
+COMP "seg7<1>" LOCATE = SITE "F18" LEVEL 1;
+COMP "seg7<2>" LOCATE = SITE "D17" LEVEL 1;
+COMP "seg7<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "seg7<4>" LOCATE = SITE "G14" LEVEL 1;
+COMP "seg7<5>" LOCATE = SITE "J17" LEVEL 1;
+COMP "seg7<6>" LOCATE = SITE "H14" LEVEL 1;
+COMP "reset" LOCATE = SITE "B18" LEVEL 1;
+NET "clk_50_BUFGP/IBUFG" BEL "clk_50_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk_50 = BEL "PULSE1KHZGEN/cntrSig_0" BEL "PULSE1KHZGEN/cntrSig_1" BEL
+        "PULSE1KHZGEN/cntrSig_2" BEL "PULSE1KHZGEN/cntrSig_3" BEL
+        "PULSE1KHZGEN/cntrSig_4" BEL "PULSE1KHZGEN/cntrSig_5" BEL
+        "PULSE1KHZGEN/cntrSig_6" BEL "PULSE1KHZGEN/cntrSig_7" BEL
+        "PULSE1KHZGEN/cntrSig_8" BEL "PULSE1KHZGEN/cntrSig_9" BEL
+        "PULSE1KHZGEN/cntrSig_10" BEL "PULSE1KHZGEN/cntrSig_11" BEL
+        "PULSE1KHZGEN/cntrSig_12" BEL "PULSE1KHZGEN/cntrSig_13" BEL
+        "PULSE1KHZGEN/cntrSig_14" BEL "PULSE1KHZGEN/cntrSig_15" BEL
+        "PULSE1HZGEN/cntrSig_0" BEL "PULSE1HZGEN/cntrSig_1" BEL
+        "PULSE1HZGEN/cntrSig_2" BEL "PULSE1HZGEN/cntrSig_3" BEL
+        "PULSE1HZGEN/cntrSig_4" BEL "PULSE1HZGEN/cntrSig_5" BEL
+        "PULSE1HZGEN/cntrSig_6" BEL "PULSE1HZGEN/cntrSig_7" BEL
+        "PULSE1HZGEN/cntrSig_8" BEL "PULSE1HZGEN/cntrSig_9" BEL
+        "PULSE1HZGEN/cntrSig_10" BEL "PULSE1HZGEN/cntrSig_11" BEL
+        "PULSE1HZGEN/cntrSig_12" BEL "PULSE1HZGEN/cntrSig_13" BEL
+        "PULSE1HZGEN/cntrSig_14" BEL "PULSE1HZGEN/cntrSig_15" BEL
+        "CHAROUTS/data3_3" BEL "CHAROUTS/data3_2" BEL "CHAROUTS/data3_1" BEL
+        "CHAROUTS/data3_0" BEL "CHAROUTS/data2_3" BEL "CHAROUTS/data2_2" BEL
+        "CHAROUTS/data2_1" BEL "CHAROUTS/data2_0" BEL "CHAROUTS/data1_3" BEL
+        "CHAROUTS/data1_2" BEL "CHAROUTS/data1_1" BEL "CHAROUTS/data1_0" BEL
+        "CHAROUTS/data0_3" BEL "CHAROUTS/data0_2" BEL "CHAROUTS/data0_1" BEL
+        "CHAROUTS/data0_0" BEL "SEG7DRVR/CURRCHAR/cntr2Sig_1" BEL
+        "SEG7DRVR/CURRCHAR/cntr2Sig_0" BEL "SEG7DRVR/PULSE1KHZGEN/cntrSig_15"
+        BEL "SEG7DRVR/PULSE1KHZGEN/cntrSig_14" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_13" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_12" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_11" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_10" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_9" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_8" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_7" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_6" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_5" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_4" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_3" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_2" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_1" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_0" BEL "SEG7DRVR/anodes_3" BEL
+        "SEG7DRVR/anodes_2" BEL "SEG7DRVR/anodes_1" BEL "SEG7DRVR/anodes_0"
+        BEL "SEG7DRVR/charToDisplay_3" BEL "SEG7DRVR/charToDisplay_2" BEL
+        "SEG7DRVR/charToDisplay_1" BEL "SEG7DRVR/charToDisplay_0" BEL
+        "clk_50_BUFGP/BUFG.GCLKMUX" BEL "clk_50_BUFGP/BUFG";
+TS_clk_50 = PERIOD TIMEGRP "clk_50" 20 ns HIGH 50%;
+SCHEMATIC END;
+

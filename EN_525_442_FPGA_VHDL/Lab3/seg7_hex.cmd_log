@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab3/seg7_hex.xst" -ofn "D:/VHDL Projects/Lab3/seg7_hex.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "seg7_hex.ngc" seg7_hex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o seg7_hex_map.ncd seg7_hex.ngd seg7_hex.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_hex_map.ncd seg7_hex.ncd seg7_hex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seg7_hex.twx seg7_hex.ncd -o seg7_hex.twr seg7_hex.pcf 

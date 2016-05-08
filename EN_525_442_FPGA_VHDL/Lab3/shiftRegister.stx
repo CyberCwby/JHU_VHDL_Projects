@@ -1,0 +1,39 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/VHDL Projects/Lab3/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to D:/VHDL Projects/Lab3/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/VHDL Projects/Lab3/flipFlop.vhd" in Library work.
+Architecture behavioral of Entity flipflop is up to date.
+Compiling vhdl file "D:/VHDL Projects/Lab3/shiftRegister.vhdl" in Library work.
+Entity <shiftregister> compiled.
+ERROR:HDLParsers:1401 - "D:/VHDL Projects/Lab3/shiftRegister.vhdl" Line 29. Object dataOut0 of mode OUT can not be read.
+ERROR:HDLParsers:1401 - "D:/VHDL Projects/Lab3/shiftRegister.vhdl" Line 30. Object dataOut1 of mode OUT can not be read.
+ERROR:HDLParsers:1401 - "D:/VHDL Projects/Lab3/shiftRegister.vhdl" Line 31. Object dataOut2 of mode OUT can not be read.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> 
+
+Total memory usage is 206204 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

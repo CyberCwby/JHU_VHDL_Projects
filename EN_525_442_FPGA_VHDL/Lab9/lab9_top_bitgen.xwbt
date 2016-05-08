@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\VHDL Projects\Lab9\lab9_top.ncd
+OUTFILE=D:\VHDL Projects\Lab9\lab9_top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\VHDL Projects\Lab9
+LICENSE=WebPack
+USER_INFO=211053343_0_0_313

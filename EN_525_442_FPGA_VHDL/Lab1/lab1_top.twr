@@ -1,0 +1,118 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml lab1_top.twx lab1_top.ncd -o lab1_top.twr lab1_top.pcf
+-ucf lab1_constraints.ucf
+
+Design file:              lab1_top.ncd
+Physical constraint file: lab1_top.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+-----------------+---------------+---------+
+Source Pad       |Destination Pad|  Delay  |
+-----------------+---------------+---------+
+pushButtons<0>   |anodes<0>      |    6.927|
+pushButtons<0>   |anodes<1>      |    7.775|
+pushButtons<0>   |anodes<2>      |    7.218|
+pushButtons<0>   |anodes<3>      |    6.352|
+pushButtons<0>   |seg7<0>        |    8.849|
+pushButtons<0>   |seg7<1>        |    6.841|
+pushButtons<0>   |seg7<2>        |    7.865|
+pushButtons<0>   |seg7<3>        |    7.692|
+pushButtons<0>   |seg7<4>        |    7.181|
+pushButtons<0>   |seg7<5>        |    8.791|
+pushButtons<0>   |seg7<6>        |    7.414|
+pushButtons<1>   |anodes<0>      |    6.695|
+pushButtons<1>   |anodes<1>      |    7.506|
+pushButtons<1>   |anodes<2>      |    7.013|
+pushButtons<1>   |anodes<3>      |    6.147|
+pushButtons<1>   |seg7<0>        |    8.844|
+pushButtons<1>   |seg7<1>        |    6.677|
+pushButtons<1>   |seg7<2>        |    6.902|
+pushButtons<1>   |seg7<3>        |    7.203|
+pushButtons<1>   |seg7<4>        |    6.692|
+pushButtons<1>   |seg7<5>        |    8.786|
+pushButtons<1>   |seg7<6>        |    6.972|
+sliderSwitches<0>|leds<0>        |    5.440|
+sliderSwitches<0>|seg7<0>        |    8.710|
+sliderSwitches<0>|seg7<1>        |    7.177|
+sliderSwitches<0>|seg7<2>        |    7.774|
+sliderSwitches<0>|seg7<3>        |    8.089|
+sliderSwitches<0>|seg7<4>        |    7.578|
+sliderSwitches<0>|seg7<5>        |    8.652|
+sliderSwitches<0>|seg7<6>        |    6.778|
+sliderSwitches<1>|leds<1>        |    4.827|
+sliderSwitches<1>|seg7<0>        |    7.783|
+sliderSwitches<1>|seg7<1>        |    7.477|
+sliderSwitches<1>|seg7<2>        |    8.074|
+sliderSwitches<1>|seg7<3>        |    8.225|
+sliderSwitches<1>|seg7<4>        |    7.714|
+sliderSwitches<1>|seg7<5>        |    7.725|
+sliderSwitches<1>|seg7<6>        |    7.716|
+sliderSwitches<2>|leds<2>        |    4.827|
+sliderSwitches<2>|seg7<0>        |    7.785|
+sliderSwitches<2>|seg7<1>        |    7.669|
+sliderSwitches<2>|seg7<2>        |    8.266|
+sliderSwitches<2>|seg7<3>        |    8.624|
+sliderSwitches<2>|seg7<4>        |    8.113|
+sliderSwitches<2>|seg7<5>        |    7.727|
+sliderSwitches<2>|seg7<6>        |    7.537|
+sliderSwitches<3>|leds<3>        |    5.396|
+sliderSwitches<3>|seg7<0>        |    8.756|
+sliderSwitches<3>|seg7<1>        |    8.745|
+sliderSwitches<3>|seg7<2>        |    9.342|
+sliderSwitches<3>|seg7<3>        |    9.548|
+sliderSwitches<3>|seg7<4>        |    9.037|
+sliderSwitches<3>|seg7<5>        |    8.698|
+sliderSwitches<3>|seg7<6>        |    8.780|
+sliderSwitches<4>|leds<4>        |    6.737|
+sliderSwitches<5>|leds<5>        |    5.500|
+sliderSwitches<6>|leds<6>        |    9.043|
+sliderSwitches<7>|leds<7>        |    7.370|
+-----------------+---------------+---------+
+
+
+Analysis completed Thu Jun 04 16:57:23 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 170 MB
+
+
+

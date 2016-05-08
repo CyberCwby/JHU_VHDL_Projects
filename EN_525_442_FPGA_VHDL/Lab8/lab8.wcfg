@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/VHDL Projects/Lab8/lab8_topLevel_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_usecase_utils_pkg_v2_0" />
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="dds_compiler_v4_0_sim_comps" />
+            <top_module name="lab8_toplevel" />
+            <top_module name="math_real" />
+            <top_module name="numeric_std" />
+            <top_module name="pkg_dds_compiler_v4_0" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+            <top_module name="xbip_pipe_v2_0_comp" />
+            <top_module name="xbip_pipe_v2_0_xst_comp" />
+            <top_module name="xcc_utils_v2_0" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/lab8_toplevel/sliderswitches" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sliderswitches[5:0]</obj_property>
+      <obj_property name="ObjectShortName">sliderswitches[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/clk_50" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_50</obj_property>
+      <obj_property name="ObjectShortName">clk_50</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/dacout" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dacout</obj_property>
+      <obj_property name="ObjectShortName">dacout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/anodes" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">anodes[3:0]</obj_property>
+      <obj_property name="ObjectShortName">anodes[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/seg7" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seg7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg7[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/clk2x_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk2x_out</obj_property>
+      <obj_property name="ObjectShortName">clk2x_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/sine" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sine[9:0]</obj_property>
+      <obj_property name="ObjectShortName">sine[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/shiftedsine" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">shiftedsine[9:0]</obj_property>
+      <obj_property name="ObjectShortName">shiftedsine[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/phase_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">phase_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">phase_in[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/dacin" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dacin[9:0]</obj_property>
+      <obj_property name="ObjectShortName">dacin[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[13:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/maxcount" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">maxcount[13:0]</obj_property>
+      <obj_property name="ObjectShortName">maxcount[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/phasecounter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">phasecounter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">phasecounter[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/toshift" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">toshift</obj_property>
+      <obj_property name="ObjectShortName">toshift</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/todisplay" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">todisplay[15:0]</obj_property>
+      <obj_property name="ObjectShortName">todisplay[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/MYDAC/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/MYDAC/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/MYDAC/dacin" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dacin[9:0]</obj_property>
+      <obj_property name="ObjectShortName">dacin[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/MYDAC/dacout" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dacout</obj_property>
+      <obj_property name="ObjectShortName">dacout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/MYDAC/deltaadder" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">deltaadder[11:0]</obj_property>
+      <obj_property name="ObjectShortName">deltaadder[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/MYDAC/sigmaadder" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sigmaadder[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sigmaadder[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/MYDAC/deltab" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">deltab[11:0]</obj_property>
+      <obj_property name="ObjectShortName">deltab[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/MYDAC/sigmalatch" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sigmalatch[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sigmalatch[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab8_toplevel/MYDAC/msbi" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">msbi</obj_property>
+      <obj_property name="ObjectShortName">msbi</obj_property>
+   </wvobject>
+</wave_config>

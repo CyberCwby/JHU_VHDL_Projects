@@ -1,0 +1,6 @@
+vhdl work "D:\VHDL Projects\Lab3\twoBitUpCounter.vhd"
+vhdl work "D:\VHDL Projects\Lab3\seg7_hex.vhd"
+vhdl work "D:\VHDL Projects\Lab3\pulseGenerator.vhd"
+vhdl work "D:\VHDL Projects\Lab3\shiftRegister.vhdl"
+vhdl work "D:\VHDL Projects\Lab3\seg7_driver.vhd"
+vhdl work "D:\VHDL Projects\Lab3\top_level.vhd"

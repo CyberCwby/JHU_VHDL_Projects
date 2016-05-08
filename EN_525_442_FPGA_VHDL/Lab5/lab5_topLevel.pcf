@@ -1,0 +1,134 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Aug 11 20:18:24 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "pushButtons<0>" LOCATE = SITE "B18" LEVEL 1;
+COMP "pushButtons<1>" LOCATE = SITE "D18" LEVEL 1;
+COMP "pushButtons<2>" LOCATE = SITE "E18" LEVEL 1;
+COMP "pushButtons<3>" LOCATE = SITE "H13" LEVEL 1;
+COMP "vgaGreen<0>" LOCATE = SITE "N8" LEVEL 1;
+COMP "vgaGreen<1>" LOCATE = SITE "P8" LEVEL 1;
+COMP "vgaGreen<2>" LOCATE = SITE "P6" LEVEL 1;
+COMP "sliderSwitch" LOCATE = SITE "G18" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "leds<0>" LOCATE = SITE "J14" LEVEL 1;
+COMP "leds<1>" LOCATE = SITE "J15" LEVEL 1;
+COMP "leds<2>" LOCATE = SITE "K15" LEVEL 1;
+COMP "leds<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "leds<4>" LOCATE = SITE "E17" LEVEL 1;
+COMP "leds<5>" LOCATE = SITE "P15" LEVEL 1;
+COMP "leds<6>" LOCATE = SITE "F4" LEVEL 1;
+COMP "leds<7>" LOCATE = SITE "R4" LEVEL 1;
+COMP "seg7<0>" LOCATE = SITE "L18" LEVEL 1;
+COMP "seg7<1>" LOCATE = SITE "F18" LEVEL 1;
+COMP "seg7<2>" LOCATE = SITE "D17" LEVEL 1;
+COMP "seg7<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "seg7<4>" LOCATE = SITE "G14" LEVEL 1;
+COMP "seg7<5>" LOCATE = SITE "J17" LEVEL 1;
+COMP "seg7<6>" LOCATE = SITE "H14" LEVEL 1;
+COMP "hSync" LOCATE = SITE "T4" LEVEL 1;
+COMP "vSync" LOCATE = SITE "U3" LEVEL 1;
+COMP "vgaRed<0>" LOCATE = SITE "R9" LEVEL 1;
+COMP "vgaRed<1>" LOCATE = SITE "T8" LEVEL 1;
+COMP "vgaRed<2>" LOCATE = SITE "R8" LEVEL 1;
+COMP "clk_50" LOCATE = SITE "B8" LEVEL 1;
+COMP "vgaBlue<0>" LOCATE = SITE "U5" LEVEL 1;
+COMP "vgaBlue<1>" LOCATE = SITE "U4" LEVEL 1;
+NET "clk_50_BUFGP/IBUFG" BEL "clk_50_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk_50 = BEL "xincremented" BEL "yincremented" BEL "xcoordscntr_0" BEL
+        "xcoordscntr_1" BEL "xcoordscntr_2" BEL "xcoordscntr_3" BEL
+        "xcoordscntr_4" BEL "xcoordscntr_5" BEL "xcoordscntr_6" BEL
+        "xcoordscntr_7" BEL "ycoordscntr_0" BEL "ycoordscntr_1" BEL
+        "ycoordscntr_2" BEL "ycoordscntr_3" BEL "ycoordscntr_4" BEL
+        "ycoordscntr_5" BEL "ycoordscntr_6" BEL "ycoordscntr_7" BEL
+        "SS0DB/debouncedSignal" BEL "PB3DB/debouncedSignal" BEL
+        "PB2DB/debouncedSignal" BEL "PB1DB/debouncedSignal" BEL
+        "PB0DB/debouncedSignal" BEL "counter_0" BEL "counter_1" BEL
+        "counter_2" BEL "counter_3" BEL "counter_4" BEL "counter_5" BEL
+        "counter_6" BEL "counter_7" BEL "PULSE60HZ/cntrSig_0" BEL
+        "PULSE60HZ/cntrSig_1" BEL "PULSE60HZ/cntrSig_2" BEL
+        "PULSE60HZ/cntrSig_3" BEL "PULSE60HZ/cntrSig_4" BEL
+        "PULSE60HZ/cntrSig_5" BEL "PULSE60HZ/cntrSig_6" BEL
+        "PULSE60HZ/cntrSig_7" BEL "PULSE60HZ/cntrSig_8" BEL
+        "PULSE60HZ/cntrSig_9" BEL "PULSE60HZ/cntrSig_10" BEL
+        "PULSE60HZ/cntrSig_11" BEL "PULSE60HZ/cntrSig_12" BEL
+        "PULSE60HZ/cntrSig_13" BEL "PULSE60HZ/cntrSig_14" BEL
+        "PULSE60HZ/cntrSig_15" BEL "PULSE60HZ/cntrSig_16" BEL
+        "PULSE60HZ/cntrSig_17" BEL "PULSE60HZ/cntrSig_18" BEL
+        "PULSE60HZ/cntrSig_19" BEL "SS0DB/counter_0" BEL "SS0DB/counter_1" BEL
+        "SS0DB/counter_2" BEL "SS0DB/counter_3" BEL "SS0DB/counter_4" BEL
+        "SS0DB/counter_5" BEL "SS0DB/counter_6" BEL "SS0DB/counter_7" BEL
+        "SS0DB/counter_8" BEL "SS0DB/counter_9" BEL "SS0DB/counter_10" BEL
+        "SS0DB/counter_11" BEL "SS0DB/counter_12" BEL "SS0DB/counter_13" BEL
+        "SS0DB/counter_14" BEL "SS0DB/counter_15" BEL "SS0DB/counter_16" BEL
+        "SS0DB/counter_17" BEL "SS0DB/counter_18" BEL "SS0DB/counter_19" BEL
+        "SS0DB/counter_20" BEL "SS0DB/counter_21" BEL "SS0DB/counter_22" BEL
+        "PB3DB/counter_0" BEL "PB3DB/counter_1" BEL "PB3DB/counter_2" BEL
+        "PB3DB/counter_3" BEL "PB3DB/counter_4" BEL "PB3DB/counter_5" BEL
+        "PB3DB/counter_6" BEL "PB3DB/counter_7" BEL "PB3DB/counter_8" BEL
+        "PB3DB/counter_9" BEL "PB3DB/counter_10" BEL "PB3DB/counter_11" BEL
+        "PB3DB/counter_12" BEL "PB3DB/counter_13" BEL "PB3DB/counter_14" BEL
+        "PB3DB/counter_15" BEL "PB3DB/counter_16" BEL "PB3DB/counter_17" BEL
+        "PB3DB/counter_18" BEL "PB3DB/counter_19" BEL "PB3DB/counter_20" BEL
+        "PB3DB/counter_21" BEL "PB3DB/counter_22" BEL "PB2DB/counter_0" BEL
+        "PB2DB/counter_1" BEL "PB2DB/counter_2" BEL "PB2DB/counter_3" BEL
+        "PB2DB/counter_4" BEL "PB2DB/counter_5" BEL "PB2DB/counter_6" BEL
+        "PB2DB/counter_7" BEL "PB2DB/counter_8" BEL "PB2DB/counter_9" BEL
+        "PB2DB/counter_10" BEL "PB2DB/counter_11" BEL "PB2DB/counter_12" BEL
+        "PB2DB/counter_13" BEL "PB2DB/counter_14" BEL "PB2DB/counter_15" BEL
+        "PB2DB/counter_16" BEL "PB2DB/counter_17" BEL "PB2DB/counter_18" BEL
+        "PB2DB/counter_19" BEL "PB2DB/counter_20" BEL "PB2DB/counter_21" BEL
+        "PB2DB/counter_22" BEL "PB1DB/counter_0" BEL "PB1DB/counter_1" BEL
+        "PB1DB/counter_2" BEL "PB1DB/counter_3" BEL "PB1DB/counter_4" BEL
+        "PB1DB/counter_5" BEL "PB1DB/counter_6" BEL "PB1DB/counter_7" BEL
+        "PB1DB/counter_8" BEL "PB1DB/counter_9" BEL "PB1DB/counter_10" BEL
+        "PB1DB/counter_11" BEL "PB1DB/counter_12" BEL "PB1DB/counter_13" BEL
+        "PB1DB/counter_14" BEL "PB1DB/counter_15" BEL "PB1DB/counter_16" BEL
+        "PB1DB/counter_17" BEL "PB1DB/counter_18" BEL "PB1DB/counter_19" BEL
+        "PB1DB/counter_20" BEL "PB1DB/counter_21" BEL "PB1DB/counter_22" BEL
+        "PB0DB/counter_0" BEL "PB0DB/counter_1" BEL "PB0DB/counter_2" BEL
+        "PB0DB/counter_3" BEL "PB0DB/counter_4" BEL "PB0DB/counter_5" BEL
+        "PB0DB/counter_6" BEL "PB0DB/counter_7" BEL "PB0DB/counter_8" BEL
+        "PB0DB/counter_9" BEL "PB0DB/counter_10" BEL "PB0DB/counter_11" BEL
+        "PB0DB/counter_12" BEL "PB0DB/counter_13" BEL "PB0DB/counter_14" BEL
+        "PB0DB/counter_15" BEL "PB0DB/counter_16" BEL "PB0DB/counter_17" BEL
+        "PB0DB/counter_18" BEL "PB0DB/counter_19" BEL "PB0DB/counter_20" BEL
+        "PB0DB/counter_21" BEL "PB0DB/counter_22" BEL
+        "VGADRV/vertical_counter_9" BEL "VGADRV/vertical_counter_8" BEL
+        "VGADRV/vertical_counter_7" BEL "VGADRV/vertical_counter_6" BEL
+        "VGADRV/vertical_counter_5" BEL "VGADRV/vertical_counter_4" BEL
+        "VGADRV/vertical_counter_3" BEL "VGADRV/vertical_counter_2" BEL
+        "VGADRV/vertical_counter_1" BEL "VGADRV/vertical_counter_0" BEL
+        "VGADRV/horizontal_counter_9" BEL "VGADRV/horizontal_counter_8" BEL
+        "VGADRV/horizontal_counter_7" BEL "VGADRV/horizontal_counter_6" BEL
+        "VGADRV/horizontal_counter_5" BEL "VGADRV/horizontal_counter_4" BEL
+        "VGADRV/horizontal_counter_3" BEL "VGADRV/horizontal_counter_2" BEL
+        "VGADRV/horizontal_counter_1" BEL "VGADRV/horizontal_counter_0" BEL
+        "VGADRV/horizontal_reset" BEL "SEG7DRVR/CURRCHAR/cntr2Sig_1" BEL
+        "SEG7DRVR/CURRCHAR/cntr2Sig_0" BEL "SEG7DRVR/PULSE1KHZGEN/cntrSig_15"
+        BEL "SEG7DRVR/PULSE1KHZGEN/cntrSig_14" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_13" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_12" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_11" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_10" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_9" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_8" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_7" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_6" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_5" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_4" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_3" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_2" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_1" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_0" BEL "SEG7DRVR/anodes_3" BEL
+        "SEG7DRVR/anodes_2" BEL "SEG7DRVR/anodes_1" BEL "SEG7DRVR/anodes_0"
+        BEL "SEG7DRVR/charToDisplay_3" BEL "SEG7DRVR/charToDisplay_2" BEL
+        "SEG7DRVR/charToDisplay_1" BEL "SEG7DRVR/charToDisplay_0" BEL
+        "PULSE/en25t" BEL "clk_50_BUFGP/BUFG.GCLKMUX" BEL "clk_50_BUFGP/BUFG";
+TS_clk_50 = PERIOD TIMEGRP "clk_50" 20 ns HIGH 50%;
+SCHEMATIC END;
+

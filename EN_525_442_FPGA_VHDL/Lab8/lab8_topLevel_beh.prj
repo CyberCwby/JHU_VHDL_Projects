@@ -1,0 +1,8 @@
+vhdl work "ipcore_dir/sineLUT.vhd"
+vhdl work "twoBitUpCounter.vhd"
+vhdl work "seg7_hex.vhd"
+vhdl work "pulseGenerator.vhd"
+vhdl work "seg7_driver.vhd"
+vhdl work "myDCM.vhd"
+vhdl work "dac.vhd"
+vhdl work "lab8_topLevel.vhd"

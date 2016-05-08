@@ -1,0 +1,6 @@
+vhdl isim_temp "twoBitUpCounter.vhd"
+vhdl isim_temp "seg7_hex.vhd"
+vhdl isim_temp "pulseGenerator.vhd"
+vhdl isim_temp "upCounter.vhd"
+vhdl isim_temp "seg7_driver.vhd"
+vhdl isim_temp "lab4_top.vhd"

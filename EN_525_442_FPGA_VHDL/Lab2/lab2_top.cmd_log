@@ -1,0 +1,36 @@
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab2/lab2_top.xst" -ofn "D:/VHDL Projects/Lab2/lab2_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab2/lab2_top.xst" -ofn "D:/VHDL Projects/Lab2/lab2_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "lab2_top.ngc" lab2_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab2_top_map.ncd lab2_top.ngd lab2_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab2_top_map.ncd lab2_top.ncd lab2_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab2_top.twx lab2_top.ncd -o lab2_top.twr lab2_top.pcf 
+bitgen -intstyle ise -f lab2_top.ut lab2_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab2_constraints.ucf -p xc3s500e-fg320-4 "lab2_top.ngc" lab2_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab2_top_map.ncd lab2_top.ngd lab2_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab2_top_map.ncd lab2_top.ncd lab2_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab2_top.twx lab2_top.ncd -o lab2_top.twr lab2_top.pcf -ucf lab2_constraints.ucf 
+bitgen -intstyle ise -f lab2_top.ut lab2_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab2/lab2_top.xst" -ofn "D:/VHDL Projects/Lab2/lab2_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab2_constraints.ucf -p xc3s500e-fg320-4 "lab2_top.ngc" lab2_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab2_top_map.ncd lab2_top.ngd lab2_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab2_top_map.ncd lab2_top.ncd lab2_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab2_top.twx lab2_top.ncd -o lab2_top.twr lab2_top.pcf -ucf lab2_constraints.ucf 
+bitgen -intstyle ise -f lab2_top.ut lab2_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab2/lab2_top.xst" -ofn "D:/VHDL Projects/Lab2/lab2_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab2_constraints.ucf -p xc3s500e-fg320-4 "lab2_top.ngc" lab2_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab2_top_map.ncd lab2_top.ngd lab2_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab2_top_map.ncd lab2_top.ncd lab2_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab2_top.twx lab2_top.ncd -o lab2_top.twr lab2_top.pcf -ucf lab2_constraints.ucf 
+bitgen -intstyle ise -f lab2_top.ut lab2_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab2/lab2_top.xst" -ofn "D:/VHDL Projects/Lab2/lab2_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab2_constraints.ucf -p xc3s500e-fg320-4 "lab2_top.ngc" lab2_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab2_top_map.ncd lab2_top.ngd lab2_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab2_top_map.ncd lab2_top.ncd lab2_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab2_top.twx lab2_top.ncd -o lab2_top.twr lab2_top.pcf -ucf lab2_constraints.ucf 
+bitgen -intstyle ise -f lab2_top.ut lab2_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab2/lab2_top.xst" -ofn "D:/VHDL Projects/Lab2/lab2_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab2_constraints.ucf -p xc3s500e-fg320-4 "lab2_top.ngc" lab2_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab2_top_map.ncd lab2_top.ngd lab2_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab2_top_map.ncd lab2_top.ncd lab2_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab2_top.twx lab2_top.ncd -o lab2_top.twr lab2_top.pcf -ucf lab2_constraints.ucf 
+bitgen -intstyle ise -f lab2_top.ut lab2_top.ncd 

@@ -1,0 +1,7 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/VHDL Projects/Lab8/lab8_topLevel_isim_beh.exe" -prj "D:/VHDL Projects/Lab8/lab8_topLevel_beh.prj" "work.lab8_topLevel" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+ERROR:HDLCompiler:102 - "Unknown" Line 0: cannot open vhdl file D:/VHDL Projects/Lab8/twoBitUpCounter.vhd
+ERROR:Simulator:824 - Sorting of project file "D:/VHDL Projects/Lab8/lab8_topLevel_beh.prj" failed. Please sort the files manually, add a nosort keyword on the last line of "D:/VHDL Projects/Lab8/lab8_topLevel_beh.prj" and rerun the compiler

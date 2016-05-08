@@ -1,0 +1,76 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Aug 11 20:15:05 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "anodes<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "anodes<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "anodes<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "seg7<0>" LOCATE = SITE "L18" LEVEL 1;
+COMP "seg7<1>" LOCATE = SITE "F18" LEVEL 1;
+COMP "seg7<2>" LOCATE = SITE "D17" LEVEL 1;
+COMP "seg7<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "seg7<4>" LOCATE = SITE "G14" LEVEL 1;
+COMP "seg7<5>" LOCATE = SITE "J17" LEVEL 1;
+COMP "seg7<6>" LOCATE = SITE "H14" LEVEL 1;
+NET "clk_50_IBUFG1" BEL "clk_50_IBUFG_BUFG.GCLKMUX" USELOCALCONNECT;
+COMP "DACout" LOCATE = SITE "M16" LEVEL 1;
+COMP "clk_50" LOCATE = SITE "B8" LEVEL 1;
+COMP "sliderSwitches<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "sliderSwitches<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "sliderSwitches<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "sliderSwitches<3>" LOCATE = SITE "K17" LEVEL 1;
+COMP "sliderSwitches<4>" LOCATE = SITE "L14" LEVEL 1;
+COMP "anodes<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "sliderSwitches<5>" LOCATE = SITE "L13" LEVEL 1;
+TIMEGRP MYDCM_CLK2X_BUF = BEL "SAMPLERATE/cntrSig_0" BEL
+        "SAMPLERATE/cntrSig_1" BEL "SAMPLERATE/cntrSig_2" BEL
+        "SAMPLERATE/cntrSig_3" BEL "SAMPLERATE/cntrSig_4" BEL
+        "SAMPLERATE/cntrSig_5" BEL "SAMPLERATE/cntrSig_6" BEL
+        "SAMPLERATE/cntrSig_7" BEL "SAMPLERATE/cntrSig_8" BEL
+        "SAMPLERATE/cntrSig_9" BEL "SAMPLERATE/cntrSig_10" BEL
+        "SAMPLERATE/cntrSig_11" BEL "SAMPLERATE/cntrSig_12" BEL
+        "SAMPLERATE/cntrSig_13" BEL "PHASEGEN/cntr2Sig_0" BEL
+        "PHASEGEN/cntr2Sig_1" BEL "PHASEGEN/cntr2Sig_2" BEL
+        "PHASEGEN/cntr2Sig_3" BEL "MYDAC/sigmaLatch_10" BEL "MYDAC/DACout" BEL
+        "MYDAC/sigmaLatch_9" BEL "MYDAC/sigmaLatch_8" BEL "MYDAC/sigmaLatch_7"
+        BEL "MYDAC/sigmaLatch_6" BEL "MYDAC/sigmaLatch_5" BEL
+        "MYDAC/sigmaLatch_4" BEL "MYDAC/sigmaLatch_3" BEL "MYDAC/sigmaLatch_2"
+        BEL "MYDAC/sigmaLatch_1" BEL "MYDAC/sigmaLatch_0" BEL
+        "MYDAC/sigmaLatch_11" BEL "MYSINELUT/blk0000000a" BEL
+        "MYSINELUT/blk0000000b" BEL "MYSINELUT/blk0000000c" BEL
+        "MYSINELUT/blk0000000d" BEL "MYSINELUT/blk0000000e" BEL
+        "MYSINELUT/blk0000000f" BEL "MYSINELUT/blk00000010" BEL
+        "MYSINELUT/blk00000011" BEL "MYDCM/CLK2X_BUFG_INST.GCLKMUX" BEL
+        "MYDCM/CLK2X_BUFG_INST" BEL "MYSINELUT/blk00000002_Narrowed" BEL
+        "MYSINELUT/blk00000003_Narrowed" BEL "MYSINELUT/blk00000004_Narrowed"
+        BEL "MYSINELUT/blk00000005_Narrowed" BEL
+        "MYSINELUT/blk00000006_Narrowed" BEL "MYSINELUT/blk00000007_Narrowed"
+        BEL "MYSINELUT/blk00000008_Narrowed" BEL
+        "MYSINELUT/blk00000009_Narrowed";
+PIN MYDCM/DCM_SP_INST_pins<2> = BEL "MYDCM/DCM_SP_INST" PINNAME CLKIN;
+TIMEGRP clk_50 = BEL "SEG7DRVR/CURRCHAR/cntr2Sig_1" BEL
+        "SEG7DRVR/CURRCHAR/cntr2Sig_0" BEL "SEG7DRVR/PULSE1KHZGEN/cntrSig_15"
+        BEL "SEG7DRVR/PULSE1KHZGEN/cntrSig_14" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_13" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_12" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_11" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_10" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_9" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_8" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_7" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_6" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_5" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_4" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_3" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_2" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_1" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_0" BEL "SEG7DRVR/anodes_3" BEL
+        "SEG7DRVR/anodes_2" BEL "SEG7DRVR/anodes_1" BEL "SEG7DRVR/anodes_0"
+        BEL "SEG7DRVR/charToDisplay_2" BEL "SEG7DRVR/charToDisplay_1" BEL
+        "SEG7DRVR/charToDisplay_0" BEL "clk_50_IBUFG_BUFG.GCLKMUX" BEL
+        "clk_50_IBUFG_BUFG" PIN "MYDCM/DCM_SP_INST_pins<2>";
+TS_clk_50 = PERIOD TIMEGRP "clk_50" 20 ns HIGH 50%;
+TS_MYDCM_CLK2X_BUF = PERIOD TIMEGRP "MYDCM_CLK2X_BUF" TS_clk_50 / 2 HIGH 50%;
+SCHEMATIC END;
+

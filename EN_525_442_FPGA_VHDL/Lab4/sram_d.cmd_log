@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab4/sram_d.xst" -ofn "D:/VHDL Projects/Lab4/sram_d.syr" 

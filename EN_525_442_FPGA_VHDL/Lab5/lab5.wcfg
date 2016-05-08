@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/VHDL Projects/Lab5/lab5_topLevel_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="lab5_toplevel" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/lab5_toplevel/clk_50" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_50</obj_property>
+      <obj_property name="ObjectShortName">clk_50</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/pushbuttons" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pushbuttons[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pushbuttons[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/sliderswitch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sliderswitch</obj_property>
+      <obj_property name="ObjectShortName">sliderswitch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/vgared" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">vgared[2:0]</obj_property>
+      <obj_property name="ObjectShortName">vgared[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/vgagreen" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">vgagreen[2:0]</obj_property>
+      <obj_property name="ObjectShortName">vgagreen[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/vgablue" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">vgablue[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vgablue[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/hsync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hsync</obj_property>
+      <obj_property name="ObjectShortName">hsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/vsync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vsync</obj_property>
+      <obj_property name="ObjectShortName">vsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/an" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">an[3:0]</obj_property>
+      <obj_property name="ObjectShortName">an[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/seg7" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seg7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg7[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/leds" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">leds[7:0]</obj_property>
+      <obj_property name="ObjectShortName">leds[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/en25" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en25</obj_property>
+      <obj_property name="ObjectShortName">en25</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/debouncedpb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">debouncedpb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">debouncedpb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/debouncedss" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">debouncedss</obj_property>
+      <obj_property name="ObjectShortName">debouncedss</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/en60" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en60</obj_property>
+      <obj_property name="ObjectShortName">en60</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/x_coords" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x_coords[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x_coords[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/y_coords" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y_coords[7:0]</obj_property>
+      <obj_property name="ObjectShortName">y_coords[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/xincremented" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">xincremented</obj_property>
+      <obj_property name="ObjectShortName">xincremented</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/yincremented" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">yincremented</obj_property>
+      <obj_property name="ObjectShortName">yincremented</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/xcoordscntr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">xcoordscntr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">xcoordscntr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/ycoordscntr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ycoordscntr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ycoordscntr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/VGADRV/horizontal_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">horizontal_counter[9:0]</obj_property>
+      <obj_property name="ObjectShortName">horizontal_counter[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_toplevel/VGADRV/vertical_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">vertical_counter[9:0]</obj_property>
+      <obj_property name="ObjectShortName">vertical_counter[9:0]</obj_property>
+   </wvobject>
+</wave_config>

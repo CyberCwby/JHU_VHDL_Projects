@@ -1,0 +1,141 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Aug 11 20:17:14 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "pushButtons<0>" LOCATE = SITE "B18" LEVEL 1;
+COMP "pushButtons<1>" LOCATE = SITE "D18" LEVEL 1;
+COMP "RAM_data<0>" LOCATE = SITE "L1" LEVEL 1;
+COMP "RAM_data<1>" LOCATE = SITE "L4" LEVEL 1;
+COMP "RAM_data<2>" LOCATE = SITE "L6" LEVEL 1;
+COMP "RAM_data<3>" LOCATE = SITE "M4" LEVEL 1;
+COMP "RAM_data<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "RAM_data<5>" LOCATE = SITE "P1" LEVEL 1;
+COMP "RAM_data<6>" LOCATE = SITE "P2" LEVEL 1;
+COMP "RAM_data<7>" LOCATE = SITE "R2" LEVEL 1;
+COMP "RAM_data<8>" LOCATE = SITE "L3" LEVEL 1;
+COMP "RAM_data<9>" LOCATE = SITE "L5" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "seg7<0>" LOCATE = SITE "L18" LEVEL 1;
+COMP "seg7<1>" LOCATE = SITE "F18" LEVEL 1;
+COMP "seg7<2>" LOCATE = SITE "D17" LEVEL 1;
+COMP "seg7<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "seg7<4>" LOCATE = SITE "G14" LEVEL 1;
+COMP "seg7<5>" LOCATE = SITE "J17" LEVEL 1;
+COMP "seg7<6>" LOCATE = SITE "H14" LEVEL 1;
+COMP "RAM_data<10>" LOCATE = SITE "M3" LEVEL 1;
+COMP "RAM_data<11>" LOCATE = SITE "M6" LEVEL 1;
+COMP "RAM_data<12>" LOCATE = SITE "L2" LEVEL 1;
+COMP "RAM_data<13>" LOCATE = SITE "N4" LEVEL 1;
+COMP "RAM_data<14>" LOCATE = SITE "R3" LEVEL 1;
+COMP "RAM_data<15>" LOCATE = SITE "T1" LEVEL 1;
+COMP "RAMAdv" LOCATE = SITE "J4" LEVEL 1;
+COMP "RAMClk" LOCATE = SITE "H5" LEVEL 1;
+COMP "RAMCre" LOCATE = SITE "P7" LEVEL 1;
+COMP "RAM_LB" LOCATE = SITE "K5" LEVEL 1;
+COMP "RAM_UB" LOCATE = SITE "K4" LEVEL 1;
+COMP "clk_50" LOCATE = SITE "B8" LEVEL 1;
+COMP "RAM_Adr<10>" LOCATE = SITE "G3" LEVEL 1;
+COMP "RAM_Adr<11>" LOCATE = SITE "G6" LEVEL 1;
+COMP "RAM_Adr<20>" LOCATE = SITE "D2" LEVEL 1;
+COMP "RAM_Adr<12>" LOCATE = SITE "G5" LEVEL 1;
+COMP "RAM_Adr<21>" LOCATE = SITE "K3" LEVEL 1;
+COMP "RAM_Adr<13>" LOCATE = SITE "G4" LEVEL 1;
+COMP "RAM_Adr<22>" LOCATE = SITE "D1" LEVEL 1;
+COMP "RAM_Adr<14>" LOCATE = SITE "F2" LEVEL 1;
+COMP "RAM_Adr<23>" LOCATE = SITE "K6" LEVEL 1;
+COMP "RAM_Adr<15>" LOCATE = SITE "E1" LEVEL 1;
+COMP "RAM_Adr<16>" LOCATE = SITE "M5" LEVEL 1;
+COMP "RAM_Adr<17>" LOCATE = SITE "E2" LEVEL 1;
+COMP "RAM_Adr<18>" LOCATE = SITE "C2" LEVEL 1;
+COMP "RAM_Adr<19>" LOCATE = SITE "C1" LEVEL 1;
+COMP "RAM_WEb" LOCATE = SITE "N7" LEVEL 1;
+COMP "RAM_Adr<1>" LOCATE = SITE "J1" LEVEL 1;
+COMP "RAM_Adr<2>" LOCATE = SITE "J2" LEVEL 1;
+COMP "RAM_Adr<3>" LOCATE = SITE "H4" LEVEL 1;
+COMP "RAM_Adr<4>" LOCATE = SITE "H1" LEVEL 1;
+COMP "RAM_Adr<5>" LOCATE = SITE "H2" LEVEL 1;
+COMP "RAM_Adr<6>" LOCATE = SITE "J5" LEVEL 1;
+COMP "RAM_Adr<7>" LOCATE = SITE "H3" LEVEL 1;
+COMP "RAM_Adr<8>" LOCATE = SITE "H6" LEVEL 1;
+COMP "RAM_Adr<9>" LOCATE = SITE "F1" LEVEL 1;
+COMP "RAM_CEb" LOCATE = SITE "R6" LEVEL 1;
+COMP "RAM_OEb" LOCATE = SITE "T2" LEVEL 1;
+NET "clk_50_BUFGP/IBUFG" BEL "clk_50_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk_50 = BEL "RAM_WEb" BEL "lastFromRAM_0" BEL "lastFromRAM_1" BEL
+        "lastFromRAM_2" BEL "lastFromRAM_3" BEL "lastFromRAM_4" BEL
+        "lastFromRAM_5" BEL "lastFromRAM_6" BEL "lastFromRAM_7" BEL
+        "lastFromRAM_8" BEL "lastFromRAM_9" BEL "lastFromRAM_10" BEL
+        "lastFromRAM_11" BEL "lastFromRAM_12" BEL "lastFromRAM_13" BEL
+        "lastFromRAM_14" BEL "lastFromRAM_15" BEL "PB0DB/debouncedSignal" BEL
+        "PB1DB/debouncedSignal" BEL "PB0DB/counter_0" BEL "PB0DB/counter_1"
+        BEL "PB0DB/counter_2" BEL "PB0DB/counter_3" BEL "PB0DB/counter_4" BEL
+        "PB0DB/counter_5" BEL "PB0DB/counter_6" BEL "PB0DB/counter_7" BEL
+        "PB0DB/counter_8" BEL "PB0DB/counter_9" BEL "PB0DB/counter_10" BEL
+        "PB0DB/counter_11" BEL "PB0DB/counter_12" BEL "PB0DB/counter_13" BEL
+        "PB0DB/counter_14" BEL "PB0DB/counter_15" BEL "PB0DB/counter_16" BEL
+        "PB0DB/counter_17" BEL "PB0DB/counter_18" BEL "PB0DB/counter_19" BEL
+        "PB0DB/counter_20" BEL "PB0DB/counter_21" BEL "PB0DB/counter_22" BEL
+        "PB1DB/counter_0" BEL "PB1DB/counter_1" BEL "PB1DB/counter_2" BEL
+        "PB1DB/counter_3" BEL "PB1DB/counter_4" BEL "PB1DB/counter_5" BEL
+        "PB1DB/counter_6" BEL "PB1DB/counter_7" BEL "PB1DB/counter_8" BEL
+        "PB1DB/counter_9" BEL "PB1DB/counter_10" BEL "PB1DB/counter_11" BEL
+        "PB1DB/counter_12" BEL "PB1DB/counter_13" BEL "PB1DB/counter_14" BEL
+        "PB1DB/counter_15" BEL "PB1DB/counter_16" BEL "PB1DB/counter_17" BEL
+        "PB1DB/counter_18" BEL "PB1DB/counter_19" BEL "PB1DB/counter_20" BEL
+        "PB1DB/counter_21" BEL "PB1DB/counter_22" BEL "WRITEADDR/counter_0"
+        BEL "WRITEADDR/counter_1" BEL "WRITEADDR/counter_2" BEL
+        "WRITEADDR/counter_3" BEL "WRITEADDR/counter_4" BEL
+        "WRITEADDR/counter_5" BEL "WRITEADDR/counter_6" BEL
+        "WRITEADDR/counter_7" BEL "WRITEADDR/counter_8" BEL
+        "WRITEADDR/counter_9" BEL "WRITEADDR/counter_10" BEL
+        "PULSE4HZ/cntrSig_0" BEL "PULSE4HZ/cntrSig_1" BEL "PULSE4HZ/cntrSig_2"
+        BEL "PULSE4HZ/cntrSig_3" BEL "PULSE4HZ/cntrSig_4" BEL
+        "PULSE4HZ/cntrSig_5" BEL "PULSE4HZ/cntrSig_6" BEL "PULSE4HZ/cntrSig_7"
+        BEL "PULSE4HZ/cntrSig_8" BEL "PULSE4HZ/cntrSig_9" BEL
+        "PULSE4HZ/cntrSig_10" BEL "PULSE4HZ/cntrSig_11" BEL
+        "PULSE4HZ/cntrSig_12" BEL "PULSE4HZ/cntrSig_13" BEL
+        "PULSE4HZ/cntrSig_14" BEL "PULSE4HZ/cntrSig_15" BEL
+        "PULSE4HZ/cntrSig_16" BEL "PULSE4HZ/cntrSig_17" BEL
+        "PULSE4HZ/cntrSig_18" BEL "PULSE4HZ/cntrSig_19" BEL
+        "PULSE4HZ/cntrSig_20" BEL "PULSE4HZ/cntrSig_21" BEL
+        "PULSE4HZ/cntrSig_22" BEL "PULSE4HZ/cntrSig_23" BEL
+        "READADDR/counter_0" BEL "READADDR/counter_1" BEL "READADDR/counter_2"
+        BEL "READADDR/counter_3" BEL "READADDR/counter_4" BEL
+        "READADDR/counter_5" BEL "READADDR/counter_6" BEL "READADDR/counter_7"
+        BEL "READADDR/counter_8" BEL "curstate_FSM_FFd1" BEL
+        "curstate_FSM_FFd2" BEL "SEG7DRVR/CURRCHAR/cntr2Sig_1" BEL
+        "SEG7DRVR/CURRCHAR/cntr2Sig_0" BEL "SEG7DRVR/PULSE1KHZGEN/cntrSig_23"
+        BEL "SEG7DRVR/PULSE1KHZGEN/cntrSig_22" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_21" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_20" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_19" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_18" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_17" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_16" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_15" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_14" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_13" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_12" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_11" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_10" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_9" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_8" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_7" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_6" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_5" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_4" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_3" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_2" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_1" BEL
+        "SEG7DRVR/PULSE1KHZGEN/cntrSig_0" BEL "SEG7DRVR/anodes_3" BEL
+        "SEG7DRVR/anodes_2" BEL "SEG7DRVR/anodes_1" BEL "SEG7DRVR/anodes_0"
+        BEL "SEG7DRVR/charToDisplay_3" BEL "SEG7DRVR/charToDisplay_2" BEL
+        "SEG7DRVR/charToDisplay_1" BEL "SEG7DRVR/charToDisplay_0" BEL
+        "clk_50_BUFGP/BUFG.GCLKMUX" BEL "clk_50_BUFGP/BUFG";
+TS_clk_50 = PERIOD TIMEGRP "clk_50" 20 ns HIGH 50%;
+SCHEMATIC END;
+

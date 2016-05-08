@@ -1,0 +1,14 @@
+AR shiftregister behavioral "D:/VHDL Projects/Lab3/shiftRegister.vhdl" sub00/vhpl13 1439339199
+EN seg7_hex NULL "D:/VHDL Projects/Lab3/seg7_hex.vhd" sub00/vhpl00 1439339192
+AR seg7_hex behavioral "D:/VHDL Projects/Lab3/seg7_hex.vhd" sub00/vhpl01 1439339193
+EN seg7_driver NULL "D:/VHDL Projects/Lab3/seg7_driver.vhd" sub00/vhpl06 1439339200
+AR top_level behavioral "D:/VHDL Projects/Lab3/top_level.vhd" sub00/vhpl11 1439339203
+EN twobitupcounter NULL "D:/VHDL Projects/Lab3/twoBitUpCounter.vhd" sub00/vhpl04 1439339196
+EN shiftregister NULL "D:/VHDL Projects/Lab3/shiftRegister.vhdl" sub00/vhpl12 1439339198
+AR seg7_driver behavioral "D:/VHDL Projects/Lab3/seg7_driver.vhd" sub00/vhpl07 1439339201
+AR twobitupcounter behavioral "D:/VHDL Projects/Lab3/twoBitUpCounter.vhd" sub00/vhpl05 1439339197
+EN flipflop NULL "D:/VHDL Projects/Lab3/flipFlop.vhd" sub00/vhpl08 1434222391
+AR pulsegenerator behavioral "D:/VHDL Projects/Lab3/pulseGenerator.vhd" sub00/vhpl03 1439339195
+EN pulsegenerator NULL "D:/VHDL Projects/Lab3/pulseGenerator.vhd" sub00/vhpl02 1439339194
+AR flipflop behavioral "D:/VHDL Projects/Lab3/flipFlop.vhd" sub00/vhpl09 1434222392
+EN top_level NULL "D:/VHDL Projects/Lab3/top_level.vhd" sub00/vhpl10 1439339202

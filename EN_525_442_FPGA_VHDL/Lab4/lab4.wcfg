@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/VHDL Projects/Lab4/lab04_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="lab04_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="29" />
+   <wvobject fp_name="/lab04_tb/pushbuttons" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pushbuttons[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pushbuttons[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/clk_50" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_50</obj_property>
+      <obj_property name="ObjectShortName">clk_50</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/sliderswitches" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sliderswitches[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sliderswitches[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/seg7" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seg7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg7[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/an" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">an[3:0]</obj_property>
+      <obj_property name="ObjectShortName">an[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/ram_adr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_adr[23:1]</obj_property>
+      <obj_property name="ObjectShortName">ram_adr[23:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/ram_oeb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_oeb</obj_property>
+      <obj_property name="ObjectShortName">ram_oeb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/ram_web" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_web</obj_property>
+      <obj_property name="ObjectShortName">ram_web</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/ramadv" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ramadv</obj_property>
+      <obj_property name="ObjectShortName">ramadv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/ramclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ramclk</obj_property>
+      <obj_property name="ObjectShortName">ramclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/ramcre" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ramcre</obj_property>
+      <obj_property name="ObjectShortName">ramcre</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/ram_ceb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_ceb</obj_property>
+      <obj_property name="ObjectShortName">ram_ceb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/ram_lb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_lb</obj_property>
+      <obj_property name="ObjectShortName">ram_lb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/ram_ub" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_ub</obj_property>
+      <obj_property name="ObjectShortName">ram_ub</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/ram_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/lab4_top_0/cntr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cntr[10:0]</obj_property>
+      <obj_property name="ObjectShortName">cntr[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/lab4_top_0/writetoram" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writetoram</obj_property>
+      <obj_property name="ObjectShortName">writetoram</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/lab4_top_0/sigtodisplay" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sigtodisplay[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sigtodisplay[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/lab4_top_0/sigtowrite" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sigtowrite[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sigtowrite[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/lab4_top_0/datafromram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datafromram[15:0]</obj_property>
+      <obj_property name="ObjectShortName">datafromram[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/lab4_top_0/SEG7DRVR/CURRCHAR/count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count[1:0]</obj_property>
+      <obj_property name="ObjectShortName">count[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/lab4_top_0/SEG7DRVR/CURRCHAR/enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/lab4_top_0/SEG7DRVR/CURRCHAR/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/lab4_top_0/SEG7DRVR/PULSE1KHZGEN/pulse" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pulse</obj_property>
+      <obj_property name="ObjectShortName">pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/lab4_top_0/SEG7DRVR/clk50" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk50</obj_property>
+      <obj_property name="ObjectShortName">clk50</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/lab4_top_0/SEG7DRVR/char0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">char0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">char0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/lab4_top_0/SEG7DRVR/char1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">char1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">char1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/lab4_top_0/SEG7DRVR/char2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">char2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">char2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab04_tb/lab4_top_0/SEG7DRVR/char3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">char3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">char3[3:0]</obj_property>
+   </wvobject>
+</wave_config>

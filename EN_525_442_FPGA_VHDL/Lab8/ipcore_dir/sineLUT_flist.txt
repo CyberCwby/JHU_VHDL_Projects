@@ -1,0 +1,15 @@
+# Output products list for <sineLUT>
+_xmsgs\pn_parser.xmsgs
+sineLUT.asy
+sineLUT.gise
+sineLUT.ngc
+sineLUT.sym
+sineLUT.vhd
+sineLUT.vho
+sineLUT.xco
+sineLUT.xise
+sineLUT\doc\dds_compiler_v4_0_vinfo.html
+sineLUT\doc\dds_ds558.pdf
+sineLUT_flist.txt
+sineLUT_readme.txt
+sineLUT_xmdf.tcl

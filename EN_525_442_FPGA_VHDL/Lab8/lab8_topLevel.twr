@@ -1,0 +1,1029 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml lab8_topLevel.twx lab8_topLevel.ncd -o lab8_topLevel.twr
+lab8_topLevel.pcf -ucf lab8_constraints.ucf
+
+Design file:              lab8_topLevel.ncd
+Physical constraint file: lab8_topLevel.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_clk_50 = PERIOD TIMEGRP "clk_50" 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 553 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   7.326ns.
+--------------------------------------------------------------------------------
+
+Paths for end point SEG7DRVR/CURRCHAR/cntr2Sig_0 (SLICE_X64Y77.CE), 16 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     12.674ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG7DRVR/PULSE1KHZGEN/cntrSig_12 (FF)
+  Destination:          SEG7DRVR/CURRCHAR/cntr2Sig_0 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      7.326ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_IBUFG rising at 0.000ns
+  Destination Clock:    clk_50_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: SEG7DRVR/PULSE1KHZGEN/cntrSig_12 to SEG7DRVR/CURRCHAR/cntr2Sig_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y88.XQ      Tcko                  0.591   SEG7DRVR/PULSE1KHZGEN/cntrSig<12>
+                                                       SEG7DRVR/PULSE1KHZGEN/cntrSig_12
+    SLICE_X44Y88.F1      net (fanout=2)        0.526   SEG7DRVR/PULSE1KHZGEN/cntrSig<12>
+    SLICE_X44Y88.X       Tilo                  0.759   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.F4      net (fanout=1)        0.882   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.X       Tilo                  0.759   SEG7DRVR/pulse
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000064
+    SLICE_X64Y77.CE      net (fanout=13)       3.254   SEG7DRVR/pulse
+    SLICE_X64Y77.CLK     Tceck                 0.555   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_0
+    -------------------------------------------------  ---------------------------
+    Total                                      7.326ns (2.664ns logic, 4.662ns route)
+                                                       (36.4% logic, 63.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     12.711ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG7DRVR/PULSE1KHZGEN/cntrSig_15 (FF)
+  Destination:          SEG7DRVR/CURRCHAR/cntr2Sig_0 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      7.289ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_IBUFG rising at 0.000ns
+  Destination Clock:    clk_50_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: SEG7DRVR/PULSE1KHZGEN/cntrSig_15 to SEG7DRVR/CURRCHAR/cntr2Sig_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y89.YQ      Tcko                  0.587   SEG7DRVR/PULSE1KHZGEN/cntrSig<14>
+                                                       SEG7DRVR/PULSE1KHZGEN/cntrSig_15
+    SLICE_X44Y88.F2      net (fanout=2)        0.493   SEG7DRVR/PULSE1KHZGEN/cntrSig<15>
+    SLICE_X44Y88.X       Tilo                  0.759   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.F4      net (fanout=1)        0.882   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.X       Tilo                  0.759   SEG7DRVR/pulse
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000064
+    SLICE_X64Y77.CE      net (fanout=13)       3.254   SEG7DRVR/pulse
+    SLICE_X64Y77.CLK     Tceck                 0.555   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_0
+    -------------------------------------------------  ---------------------------
+    Total                                      7.289ns (2.660ns logic, 4.629ns route)
+                                                       (36.5% logic, 63.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     12.760ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG7DRVR/PULSE1KHZGEN/cntrSig_13 (FF)
+  Destination:          SEG7DRVR/CURRCHAR/cntr2Sig_0 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      7.240ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_IBUFG rising at 0.000ns
+  Destination Clock:    clk_50_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: SEG7DRVR/PULSE1KHZGEN/cntrSig_13 to SEG7DRVR/CURRCHAR/cntr2Sig_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y88.YQ      Tcko                  0.587   SEG7DRVR/PULSE1KHZGEN/cntrSig<12>
+                                                       SEG7DRVR/PULSE1KHZGEN/cntrSig_13
+    SLICE_X44Y88.F3      net (fanout=2)        0.444   SEG7DRVR/PULSE1KHZGEN/cntrSig<13>
+    SLICE_X44Y88.X       Tilo                  0.759   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.F4      net (fanout=1)        0.882   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.X       Tilo                  0.759   SEG7DRVR/pulse
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000064
+    SLICE_X64Y77.CE      net (fanout=13)       3.254   SEG7DRVR/pulse
+    SLICE_X64Y77.CLK     Tceck                 0.555   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_0
+    -------------------------------------------------  ---------------------------
+    Total                                      7.240ns (2.660ns logic, 4.580ns route)
+                                                       (36.7% logic, 63.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point SEG7DRVR/CURRCHAR/cntr2Sig_1 (SLICE_X64Y77.CE), 16 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     12.674ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG7DRVR/PULSE1KHZGEN/cntrSig_12 (FF)
+  Destination:          SEG7DRVR/CURRCHAR/cntr2Sig_1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      7.326ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_IBUFG rising at 0.000ns
+  Destination Clock:    clk_50_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: SEG7DRVR/PULSE1KHZGEN/cntrSig_12 to SEG7DRVR/CURRCHAR/cntr2Sig_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y88.XQ      Tcko                  0.591   SEG7DRVR/PULSE1KHZGEN/cntrSig<12>
+                                                       SEG7DRVR/PULSE1KHZGEN/cntrSig_12
+    SLICE_X44Y88.F1      net (fanout=2)        0.526   SEG7DRVR/PULSE1KHZGEN/cntrSig<12>
+    SLICE_X44Y88.X       Tilo                  0.759   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.F4      net (fanout=1)        0.882   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.X       Tilo                  0.759   SEG7DRVR/pulse
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000064
+    SLICE_X64Y77.CE      net (fanout=13)       3.254   SEG7DRVR/pulse
+    SLICE_X64Y77.CLK     Tceck                 0.555   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.326ns (2.664ns logic, 4.662ns route)
+                                                       (36.4% logic, 63.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     12.711ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG7DRVR/PULSE1KHZGEN/cntrSig_15 (FF)
+  Destination:          SEG7DRVR/CURRCHAR/cntr2Sig_1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      7.289ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_IBUFG rising at 0.000ns
+  Destination Clock:    clk_50_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: SEG7DRVR/PULSE1KHZGEN/cntrSig_15 to SEG7DRVR/CURRCHAR/cntr2Sig_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y89.YQ      Tcko                  0.587   SEG7DRVR/PULSE1KHZGEN/cntrSig<14>
+                                                       SEG7DRVR/PULSE1KHZGEN/cntrSig_15
+    SLICE_X44Y88.F2      net (fanout=2)        0.493   SEG7DRVR/PULSE1KHZGEN/cntrSig<15>
+    SLICE_X44Y88.X       Tilo                  0.759   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.F4      net (fanout=1)        0.882   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.X       Tilo                  0.759   SEG7DRVR/pulse
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000064
+    SLICE_X64Y77.CE      net (fanout=13)       3.254   SEG7DRVR/pulse
+    SLICE_X64Y77.CLK     Tceck                 0.555   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.289ns (2.660ns logic, 4.629ns route)
+                                                       (36.5% logic, 63.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     12.760ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG7DRVR/PULSE1KHZGEN/cntrSig_13 (FF)
+  Destination:          SEG7DRVR/CURRCHAR/cntr2Sig_1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      7.240ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_IBUFG rising at 0.000ns
+  Destination Clock:    clk_50_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: SEG7DRVR/PULSE1KHZGEN/cntrSig_13 to SEG7DRVR/CURRCHAR/cntr2Sig_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y88.YQ      Tcko                  0.587   SEG7DRVR/PULSE1KHZGEN/cntrSig<12>
+                                                       SEG7DRVR/PULSE1KHZGEN/cntrSig_13
+    SLICE_X44Y88.F3      net (fanout=2)        0.444   SEG7DRVR/PULSE1KHZGEN/cntrSig<13>
+    SLICE_X44Y88.X       Tilo                  0.759   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.F4      net (fanout=1)        0.882   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.X       Tilo                  0.759   SEG7DRVR/pulse
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000064
+    SLICE_X64Y77.CE      net (fanout=13)       3.254   SEG7DRVR/pulse
+    SLICE_X64Y77.CLK     Tceck                 0.555   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.240ns (2.660ns logic, 4.580ns route)
+                                                       (36.7% logic, 63.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point SEG7DRVR/anodes_3 (SLICE_X66Y79.CE), 16 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     13.206ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG7DRVR/PULSE1KHZGEN/cntrSig_12 (FF)
+  Destination:          SEG7DRVR/anodes_3 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      6.794ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_IBUFG rising at 0.000ns
+  Destination Clock:    clk_50_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: SEG7DRVR/PULSE1KHZGEN/cntrSig_12 to SEG7DRVR/anodes_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y88.XQ      Tcko                  0.591   SEG7DRVR/PULSE1KHZGEN/cntrSig<12>
+                                                       SEG7DRVR/PULSE1KHZGEN/cntrSig_12
+    SLICE_X44Y88.F1      net (fanout=2)        0.526   SEG7DRVR/PULSE1KHZGEN/cntrSig<12>
+    SLICE_X44Y88.X       Tilo                  0.759   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.F4      net (fanout=1)        0.882   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.X       Tilo                  0.759   SEG7DRVR/pulse
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000064
+    SLICE_X66Y79.CE      net (fanout=13)       2.722   SEG7DRVR/pulse
+    SLICE_X66Y79.CLK     Tceck                 0.555   SEG7DRVR/anodes<3>
+                                                       SEG7DRVR/anodes_3
+    -------------------------------------------------  ---------------------------
+    Total                                      6.794ns (2.664ns logic, 4.130ns route)
+                                                       (39.2% logic, 60.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     13.243ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG7DRVR/PULSE1KHZGEN/cntrSig_15 (FF)
+  Destination:          SEG7DRVR/anodes_3 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      6.757ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_IBUFG rising at 0.000ns
+  Destination Clock:    clk_50_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: SEG7DRVR/PULSE1KHZGEN/cntrSig_15 to SEG7DRVR/anodes_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y89.YQ      Tcko                  0.587   SEG7DRVR/PULSE1KHZGEN/cntrSig<14>
+                                                       SEG7DRVR/PULSE1KHZGEN/cntrSig_15
+    SLICE_X44Y88.F2      net (fanout=2)        0.493   SEG7DRVR/PULSE1KHZGEN/cntrSig<15>
+    SLICE_X44Y88.X       Tilo                  0.759   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.F4      net (fanout=1)        0.882   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.X       Tilo                  0.759   SEG7DRVR/pulse
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000064
+    SLICE_X66Y79.CE      net (fanout=13)       2.722   SEG7DRVR/pulse
+    SLICE_X66Y79.CLK     Tceck                 0.555   SEG7DRVR/anodes<3>
+                                                       SEG7DRVR/anodes_3
+    -------------------------------------------------  ---------------------------
+    Total                                      6.757ns (2.660ns logic, 4.097ns route)
+                                                       (39.4% logic, 60.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     13.292ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG7DRVR/PULSE1KHZGEN/cntrSig_13 (FF)
+  Destination:          SEG7DRVR/anodes_3 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      6.708ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_IBUFG rising at 0.000ns
+  Destination Clock:    clk_50_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: SEG7DRVR/PULSE1KHZGEN/cntrSig_13 to SEG7DRVR/anodes_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y88.YQ      Tcko                  0.587   SEG7DRVR/PULSE1KHZGEN/cntrSig<12>
+                                                       SEG7DRVR/PULSE1KHZGEN/cntrSig_13
+    SLICE_X44Y88.F3      net (fanout=2)        0.444   SEG7DRVR/PULSE1KHZGEN/cntrSig<13>
+    SLICE_X44Y88.X       Tilo                  0.759   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.F4      net (fanout=1)        0.882   SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000017
+    SLICE_X46Y83.X       Tilo                  0.759   SEG7DRVR/pulse
+                                                       SEG7DRVR/PULSE1KHZGEN/clear_cmp_eq000064
+    SLICE_X66Y79.CE      net (fanout=13)       2.722   SEG7DRVR/pulse
+    SLICE_X66Y79.CLK     Tceck                 0.555   SEG7DRVR/anodes<3>
+                                                       SEG7DRVR/anodes_3
+    -------------------------------------------------  ---------------------------
+    Total                                      6.708ns (2.660ns logic, 4.048ns route)
+                                                       (39.7% logic, 60.3% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk_50 = PERIOD TIMEGRP "clk_50" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point SEG7DRVR/anodes_3 (SLICE_X66Y79.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.493ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               SEG7DRVR/CURRCHAR/cntr2Sig_0 (FF)
+  Destination:          SEG7DRVR/anodes_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.497ns (Levels of Logic = 1)
+  Clock Path Skew:      0.004ns (0.059 - 0.055)
+  Source Clock:         clk_50_IBUFG rising at 20.000ns
+  Destination Clock:    clk_50_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: SEG7DRVR/CURRCHAR/cntr2Sig_0 to SEG7DRVR/anodes_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y77.XQ      Tcko                  0.474   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_0
+    SLICE_X66Y79.F4      net (fanout=9)        0.463   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+    SLICE_X66Y79.CLK     Tckf        (-Th)    -0.560   SEG7DRVR/anodes<3>
+                                                       SEG7DRVR/Mdecod_anodes_mux000431
+                                                       SEG7DRVR/anodes_3
+    -------------------------------------------------  ---------------------------
+    Total                                      1.497ns (1.034ns logic, 0.463ns route)
+                                                       (69.1% logic, 30.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point SEG7DRVR/CURRCHAR/cntr2Sig_1 (SLICE_X64Y77.G4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.504ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               SEG7DRVR/CURRCHAR/cntr2Sig_1 (FF)
+  Destination:          SEG7DRVR/CURRCHAR/cntr2Sig_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.504ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_50_IBUFG rising at 20.000ns
+  Destination Clock:    clk_50_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: SEG7DRVR/CURRCHAR/cntr2Sig_1 to SEG7DRVR/CURRCHAR/cntr2Sig_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y77.YQ      Tcko                  0.522   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_1
+    SLICE_X64Y77.G4      net (fanout=8)        0.422   SEG7DRVR/CURRCHAR/cntr2Sig<1>
+    SLICE_X64Y77.CLK     Tckg        (-Th)    -0.560   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/Mcount_cntr2Sig_xor<1>11
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.504ns (1.082ns logic, 0.422ns route)
+                                                       (71.9% logic, 28.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point SEG7DRVR/anodes_3 (SLICE_X66Y79.F2), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.531ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               SEG7DRVR/CURRCHAR/cntr2Sig_1 (FF)
+  Destination:          SEG7DRVR/anodes_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.535ns (Levels of Logic = 1)
+  Clock Path Skew:      0.004ns (0.059 - 0.055)
+  Source Clock:         clk_50_IBUFG rising at 20.000ns
+  Destination Clock:    clk_50_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: SEG7DRVR/CURRCHAR/cntr2Sig_1 to SEG7DRVR/anodes_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y77.YQ      Tcko                  0.522   SEG7DRVR/CURRCHAR/cntr2Sig<0>
+                                                       SEG7DRVR/CURRCHAR/cntr2Sig_1
+    SLICE_X66Y79.F2      net (fanout=8)        0.453   SEG7DRVR/CURRCHAR/cntr2Sig<1>
+    SLICE_X66Y79.CLK     Tckf        (-Th)    -0.560   SEG7DRVR/anodes<3>
+                                                       SEG7DRVR/Mdecod_anodes_mux000431
+                                                       SEG7DRVR/anodes_3
+    -------------------------------------------------  ---------------------------
+    Total                                      1.535ns (1.082ns logic, 0.453ns route)
+                                                       (70.5% logic, 29.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk_50 = PERIOD TIMEGRP "clk_50" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 6.786ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 3.214ns (311.139MHz) (Tdcmpco)
+  Physical resource: MYDCM/DCM_SP_INST/CLK2X
+  Logical resource: MYDCM/DCM_SP_INST/CLK2X
+  Location pin: DCM_X0Y1.CLK2X
+  Clock network: MYDCM/CLK2X_BUF
+--------------------------------------------------------------------------------
+Slack: 14.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 3.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: MYDCM/DCM_SP_INST/CLKIN
+  Logical resource: MYDCM/DCM_SP_INST/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: clk_50_IBUFG1
+--------------------------------------------------------------------------------
+Slack: 14.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 3.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: MYDCM/DCM_SP_INST/CLKIN
+  Logical resource: MYDCM/DCM_SP_INST/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: clk_50_IBUFG1
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_MYDCM_CLK2X_BUF = PERIOD TIMEGRP "MYDCM_CLK2X_BUF" 
+TS_clk_50 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1611 paths analyzed, 202 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   7.906ns.
+--------------------------------------------------------------------------------
+
+Paths for end point MYDAC/sigmaLatch_11 (SLICE_X55Y33.CIN), 158 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     2.094ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MYSINELUT/blk0000000d (FF)
+  Destination:          MYDAC/sigmaLatch_11 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.899ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.007ns (0.005 - 0.012)
+  Source Clock:         CLK2X_OUT rising at 0.000ns
+  Destination Clock:    CLK2X_OUT rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: MYSINELUT/blk0000000d to MYDAC/sigmaLatch_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y36.YQ      Tcko                  0.652   sine<7>
+                                                       MYSINELUT/blk0000000d
+    SLICE_X64Y28.G2      net (fanout=5)        1.391   sine<6>
+    SLICE_X64Y28.Y       Tilo                  0.759   N45
+                                                       DACin<0>22
+    SLICE_X64Y28.F4      net (fanout=2)        0.044   N3
+    SLICE_X64Y28.X       Tilo                  0.759   N45
+                                                       DACin<3>2_F
+    SLICE_X54Y30.G4      net (fanout=1)        0.809   N45
+    SLICE_X54Y30.Y       Tilo                  0.759   DACin<9>
+                                                       DACin<3>21
+    SLICE_X55Y29.G4      net (fanout=2)        0.369   DACin<3>
+    SLICE_X55Y29.COUT    Topcyg                1.001   MYDAC/sigmaLatch<2>
+                                                       MYDAC/Madd_sigmaAdder_Madd_lut<3>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<3>
+    SLICE_X55Y30.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<3>
+    SLICE_X55Y30.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<7>
+    SLICE_X55Y32.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<7>
+    SLICE_X55Y32.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<8>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<8>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<9>
+    SLICE_X55Y33.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<9>
+    SLICE_X55Y33.CLK     Tcinck                1.002   MYDAC/sigmaLatch<10>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<10>
+                                                       MYDAC/Madd_sigmaAdder_Madd_xor<11>
+                                                       MYDAC/sigmaLatch_11
+    -------------------------------------------------  ---------------------------
+    Total                                      7.899ns (5.286ns logic, 2.613ns route)
+                                                       (66.9% logic, 33.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     2.236ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MYSINELUT/blk0000000b (FF)
+  Destination:          MYDAC/sigmaLatch_11 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.760ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.004ns (0.005 - 0.009)
+  Source Clock:         CLK2X_OUT rising at 0.000ns
+  Destination Clock:    CLK2X_OUT rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: MYSINELUT/blk0000000b to MYDAC/sigmaLatch_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y34.YQ      Tcko                  0.652   sine<9>
+                                                       MYSINELUT/blk0000000b
+    SLICE_X64Y28.F3      net (fanout=7)        2.055   sine<8>
+    SLICE_X64Y28.X       Tilo                  0.759   N45
+                                                       DACin<3>2_F
+    SLICE_X54Y30.G4      net (fanout=1)        0.809   N45
+    SLICE_X54Y30.Y       Tilo                  0.759   DACin<9>
+                                                       DACin<3>21
+    SLICE_X55Y29.G4      net (fanout=2)        0.369   DACin<3>
+    SLICE_X55Y29.COUT    Topcyg                1.001   MYDAC/sigmaLatch<2>
+                                                       MYDAC/Madd_sigmaAdder_Madd_lut<3>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<3>
+    SLICE_X55Y30.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<3>
+    SLICE_X55Y30.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<7>
+    SLICE_X55Y32.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<7>
+    SLICE_X55Y32.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<8>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<8>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<9>
+    SLICE_X55Y33.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<9>
+    SLICE_X55Y33.CLK     Tcinck                1.002   MYDAC/sigmaLatch<10>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<10>
+                                                       MYDAC/Madd_sigmaAdder_Madd_xor<11>
+                                                       MYDAC/sigmaLatch_11
+    -------------------------------------------------  ---------------------------
+    Total                                      7.760ns (4.527ns logic, 3.233ns route)
+                                                       (58.3% logic, 41.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     2.243ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MYSINELUT/blk0000000d (FF)
+  Destination:          MYDAC/sigmaLatch_11 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.750ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.007ns (0.005 - 0.012)
+  Source Clock:         CLK2X_OUT rising at 0.000ns
+  Destination Clock:    CLK2X_OUT rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: MYSINELUT/blk0000000d to MYDAC/sigmaLatch_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y36.YQ      Tcko                  0.652   sine<7>
+                                                       MYSINELUT/blk0000000d
+    SLICE_X64Y28.G2      net (fanout=5)        1.391   sine<6>
+    SLICE_X64Y28.Y       Tilo                  0.759   N45
+                                                       DACin<0>22
+    SLICE_X64Y28.F4      net (fanout=2)        0.044   N3
+    SLICE_X64Y28.X       Tilo                  0.759   N45
+                                                       DACin<3>2_F
+    SLICE_X54Y30.G4      net (fanout=1)        0.809   N45
+    SLICE_X54Y30.Y       Tilo                  0.759   DACin<9>
+                                                       DACin<3>21
+    SLICE_X55Y30.F1      net (fanout=2)        0.177   DACin<3>
+    SLICE_X55Y30.COUT    Topcyf                1.162   MYDAC/sigmaLatch<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_lut<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<7>
+    SLICE_X55Y32.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<7>
+    SLICE_X55Y32.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<8>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<8>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<9>
+    SLICE_X55Y33.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<9>
+    SLICE_X55Y33.CLK     Tcinck                1.002   MYDAC/sigmaLatch<10>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<10>
+                                                       MYDAC/Madd_sigmaAdder_Madd_xor<11>
+                                                       MYDAC/sigmaLatch_11
+    -------------------------------------------------  ---------------------------
+    Total                                      7.750ns (5.329ns logic, 2.421ns route)
+                                                       (68.8% logic, 31.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MYDAC/sigmaLatch_9 (SLICE_X55Y32.CIN), 139 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     2.212ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MYSINELUT/blk0000000d (FF)
+  Destination:          MYDAC/sigmaLatch_9 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.781ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.007ns (0.005 - 0.012)
+  Source Clock:         CLK2X_OUT rising at 0.000ns
+  Destination Clock:    CLK2X_OUT rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: MYSINELUT/blk0000000d to MYDAC/sigmaLatch_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y36.YQ      Tcko                  0.652   sine<7>
+                                                       MYSINELUT/blk0000000d
+    SLICE_X64Y28.G2      net (fanout=5)        1.391   sine<6>
+    SLICE_X64Y28.Y       Tilo                  0.759   N45
+                                                       DACin<0>22
+    SLICE_X64Y28.F4      net (fanout=2)        0.044   N3
+    SLICE_X64Y28.X       Tilo                  0.759   N45
+                                                       DACin<3>2_F
+    SLICE_X54Y30.G4      net (fanout=1)        0.809   N45
+    SLICE_X54Y30.Y       Tilo                  0.759   DACin<9>
+                                                       DACin<3>21
+    SLICE_X55Y29.G4      net (fanout=2)        0.369   DACin<3>
+    SLICE_X55Y29.COUT    Topcyg                1.001   MYDAC/sigmaLatch<2>
+                                                       MYDAC/Madd_sigmaAdder_Madd_lut<3>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<3>
+    SLICE_X55Y30.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<3>
+    SLICE_X55Y30.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<7>
+    SLICE_X55Y32.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<7>
+    SLICE_X55Y32.CLK     Tcinck                1.002   MYDAC/sigmaLatch<8>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<8>
+                                                       MYDAC/Madd_sigmaAdder_Madd_xor<9>
+                                                       MYDAC/sigmaLatch_9
+    -------------------------------------------------  ---------------------------
+    Total                                      7.781ns (5.168ns logic, 2.613ns route)
+                                                       (66.4% logic, 33.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     2.354ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MYSINELUT/blk0000000b (FF)
+  Destination:          MYDAC/sigmaLatch_9 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.642ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.004ns (0.005 - 0.009)
+  Source Clock:         CLK2X_OUT rising at 0.000ns
+  Destination Clock:    CLK2X_OUT rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: MYSINELUT/blk0000000b to MYDAC/sigmaLatch_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y34.YQ      Tcko                  0.652   sine<9>
+                                                       MYSINELUT/blk0000000b
+    SLICE_X64Y28.F3      net (fanout=7)        2.055   sine<8>
+    SLICE_X64Y28.X       Tilo                  0.759   N45
+                                                       DACin<3>2_F
+    SLICE_X54Y30.G4      net (fanout=1)        0.809   N45
+    SLICE_X54Y30.Y       Tilo                  0.759   DACin<9>
+                                                       DACin<3>21
+    SLICE_X55Y29.G4      net (fanout=2)        0.369   DACin<3>
+    SLICE_X55Y29.COUT    Topcyg                1.001   MYDAC/sigmaLatch<2>
+                                                       MYDAC/Madd_sigmaAdder_Madd_lut<3>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<3>
+    SLICE_X55Y30.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<3>
+    SLICE_X55Y30.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<7>
+    SLICE_X55Y32.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<7>
+    SLICE_X55Y32.CLK     Tcinck                1.002   MYDAC/sigmaLatch<8>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<8>
+                                                       MYDAC/Madd_sigmaAdder_Madd_xor<9>
+                                                       MYDAC/sigmaLatch_9
+    -------------------------------------------------  ---------------------------
+    Total                                      7.642ns (4.409ns logic, 3.233ns route)
+                                                       (57.7% logic, 42.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     2.361ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MYSINELUT/blk0000000d (FF)
+  Destination:          MYDAC/sigmaLatch_9 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.632ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.007ns (0.005 - 0.012)
+  Source Clock:         CLK2X_OUT rising at 0.000ns
+  Destination Clock:    CLK2X_OUT rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: MYSINELUT/blk0000000d to MYDAC/sigmaLatch_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y36.YQ      Tcko                  0.652   sine<7>
+                                                       MYSINELUT/blk0000000d
+    SLICE_X64Y28.G2      net (fanout=5)        1.391   sine<6>
+    SLICE_X64Y28.Y       Tilo                  0.759   N45
+                                                       DACin<0>22
+    SLICE_X64Y28.F4      net (fanout=2)        0.044   N3
+    SLICE_X64Y28.X       Tilo                  0.759   N45
+                                                       DACin<3>2_F
+    SLICE_X54Y30.G4      net (fanout=1)        0.809   N45
+    SLICE_X54Y30.Y       Tilo                  0.759   DACin<9>
+                                                       DACin<3>21
+    SLICE_X55Y30.F1      net (fanout=2)        0.177   DACin<3>
+    SLICE_X55Y30.COUT    Topcyf                1.162   MYDAC/sigmaLatch<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_lut<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<7>
+    SLICE_X55Y32.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<7>
+    SLICE_X55Y32.CLK     Tcinck                1.002   MYDAC/sigmaLatch<8>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<8>
+                                                       MYDAC/Madd_sigmaAdder_Madd_xor<9>
+                                                       MYDAC/sigmaLatch_9
+    -------------------------------------------------  ---------------------------
+    Total                                      7.632ns (5.211ns logic, 2.421ns route)
+                                                       (68.3% logic, 31.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MYDAC/sigmaLatch_7 (SLICE_X55Y31.CIN), 108 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     2.327ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MYSINELUT/blk0000000d (FF)
+  Destination:          MYDAC/sigmaLatch_7 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.663ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.010ns (0.002 - 0.012)
+  Source Clock:         CLK2X_OUT rising at 0.000ns
+  Destination Clock:    CLK2X_OUT rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: MYSINELUT/blk0000000d to MYDAC/sigmaLatch_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y36.YQ      Tcko                  0.652   sine<7>
+                                                       MYSINELUT/blk0000000d
+    SLICE_X64Y28.G2      net (fanout=5)        1.391   sine<6>
+    SLICE_X64Y28.Y       Tilo                  0.759   N45
+                                                       DACin<0>22
+    SLICE_X64Y28.F4      net (fanout=2)        0.044   N3
+    SLICE_X64Y28.X       Tilo                  0.759   N45
+                                                       DACin<3>2_F
+    SLICE_X54Y30.G4      net (fanout=1)        0.809   N45
+    SLICE_X54Y30.Y       Tilo                  0.759   DACin<9>
+                                                       DACin<3>21
+    SLICE_X55Y29.G4      net (fanout=2)        0.369   DACin<3>
+    SLICE_X55Y29.COUT    Topcyg                1.001   MYDAC/sigmaLatch<2>
+                                                       MYDAC/Madd_sigmaAdder_Madd_lut<3>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<3>
+    SLICE_X55Y30.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<3>
+    SLICE_X55Y30.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.CLK     Tcinck                1.002   MYDAC/sigmaLatch<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_xor<7>
+                                                       MYDAC/sigmaLatch_7
+    -------------------------------------------------  ---------------------------
+    Total                                      7.663ns (5.050ns logic, 2.613ns route)
+                                                       (65.9% logic, 34.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     2.469ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MYSINELUT/blk0000000b (FF)
+  Destination:          MYDAC/sigmaLatch_7 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.524ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.007ns (0.002 - 0.009)
+  Source Clock:         CLK2X_OUT rising at 0.000ns
+  Destination Clock:    CLK2X_OUT rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: MYSINELUT/blk0000000b to MYDAC/sigmaLatch_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y34.YQ      Tcko                  0.652   sine<9>
+                                                       MYSINELUT/blk0000000b
+    SLICE_X64Y28.F3      net (fanout=7)        2.055   sine<8>
+    SLICE_X64Y28.X       Tilo                  0.759   N45
+                                                       DACin<3>2_F
+    SLICE_X54Y30.G4      net (fanout=1)        0.809   N45
+    SLICE_X54Y30.Y       Tilo                  0.759   DACin<9>
+                                                       DACin<3>21
+    SLICE_X55Y29.G4      net (fanout=2)        0.369   DACin<3>
+    SLICE_X55Y29.COUT    Topcyg                1.001   MYDAC/sigmaLatch<2>
+                                                       MYDAC/Madd_sigmaAdder_Madd_lut<3>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<3>
+    SLICE_X55Y30.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<3>
+    SLICE_X55Y30.COUT    Tbyp                  0.118   MYDAC/sigmaLatch<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.CLK     Tcinck                1.002   MYDAC/sigmaLatch<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_xor<7>
+                                                       MYDAC/sigmaLatch_7
+    -------------------------------------------------  ---------------------------
+    Total                                      7.524ns (4.291ns logic, 3.233ns route)
+                                                       (57.0% logic, 43.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     2.476ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MYSINELUT/blk0000000d (FF)
+  Destination:          MYDAC/sigmaLatch_7 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.514ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.010ns (0.002 - 0.012)
+  Source Clock:         CLK2X_OUT rising at 0.000ns
+  Destination Clock:    CLK2X_OUT rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: MYSINELUT/blk0000000d to MYDAC/sigmaLatch_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y36.YQ      Tcko                  0.652   sine<7>
+                                                       MYSINELUT/blk0000000d
+    SLICE_X64Y28.G2      net (fanout=5)        1.391   sine<6>
+    SLICE_X64Y28.Y       Tilo                  0.759   N45
+                                                       DACin<0>22
+    SLICE_X64Y28.F4      net (fanout=2)        0.044   N3
+    SLICE_X64Y28.X       Tilo                  0.759   N45
+                                                       DACin<3>2_F
+    SLICE_X54Y30.G4      net (fanout=1)        0.809   N45
+    SLICE_X54Y30.Y       Tilo                  0.759   DACin<9>
+                                                       DACin<3>21
+    SLICE_X55Y30.F1      net (fanout=2)        0.177   DACin<3>
+    SLICE_X55Y30.COUT    Topcyf                1.162   MYDAC/sigmaLatch<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_lut<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<4>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.CIN     net (fanout=1)        0.000   MYDAC/Madd_sigmaAdder_Madd_cy<5>
+    SLICE_X55Y31.CLK     Tcinck                1.002   MYDAC/sigmaLatch<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_cy<6>
+                                                       MYDAC/Madd_sigmaAdder_Madd_xor<7>
+                                                       MYDAC/sigmaLatch_7
+    -------------------------------------------------  ---------------------------
+    Total                                      7.514ns (5.093ns logic, 2.421ns route)
+                                                       (67.8% logic, 32.2% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_MYDCM_CLK2X_BUF = PERIOD TIMEGRP "MYDCM_CLK2X_BUF" TS_clk_50 / 2 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point MYSINELUT/blk00000006_Narrowed (SLICE_X54Y36.G4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.957ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               PHASEGEN/cntr2Sig_3 (FF)
+  Destination:          MYSINELUT/blk00000006_Narrowed (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.957ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK2X_OUT rising at 10.000ns
+  Destination Clock:    CLK2X_OUT rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: PHASEGEN/cntr2Sig_3 to MYSINELUT/blk00000006_Narrowed
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y37.XQ      Tcko                  0.474   PHASEGEN/cntr2Sig<3>
+                                                       PHASEGEN/cntr2Sig_3
+    SLICE_X54Y36.G4      net (fanout=9)        0.482   PHASEGEN/cntr2Sig<3>
+    SLICE_X54Y36.CLK     Tah         (-Th)    -0.001   sine<7>
+                                                       MYSINELUT/blk00000006_Narrowed
+    -------------------------------------------------  ---------------------------
+    Total                                      0.957ns (0.475ns logic, 0.482ns route)
+                                                       (49.6% logic, 50.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MYSINELUT/blk00000004_Narrowed (SLICE_X54Y36.G4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.957ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               PHASEGEN/cntr2Sig_3 (FF)
+  Destination:          MYSINELUT/blk00000004_Narrowed (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.957ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK2X_OUT rising at 10.000ns
+  Destination Clock:    CLK2X_OUT rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: PHASEGEN/cntr2Sig_3 to MYSINELUT/blk00000004_Narrowed
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y37.XQ      Tcko                  0.474   PHASEGEN/cntr2Sig<3>
+                                                       PHASEGEN/cntr2Sig_3
+    SLICE_X54Y36.G4      net (fanout=9)        0.482   PHASEGEN/cntr2Sig<3>
+    SLICE_X54Y36.CLK     Tah         (-Th)    -0.001   sine<7>
+                                                       MYSINELUT/blk00000004_Narrowed
+    -------------------------------------------------  ---------------------------
+    Total                                      0.957ns (0.475ns logic, 0.482ns route)
+                                                       (49.6% logic, 50.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MYSINELUT/blk00000002_Narrowed (SLICE_X54Y34.G1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.137ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               PHASEGEN/cntr2Sig_0 (FF)
+  Destination:          MYSINELUT/blk00000002_Narrowed (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      1.134ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.003ns (0.009 - 0.012)
+  Source Clock:         CLK2X_OUT rising at 10.000ns
+  Destination Clock:    CLK2X_OUT rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: PHASEGEN/cntr2Sig_0 to MYSINELUT/blk00000002_Narrowed
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y37.XQ      Tcko                  0.473   PHASEGEN/cntr2Sig<0>
+                                                       PHASEGEN/cntr2Sig_0
+    SLICE_X54Y34.G1      net (fanout=12)       0.660   PHASEGEN/cntr2Sig<0>
+    SLICE_X54Y34.CLK     Tah         (-Th)    -0.001   sine<9>
+                                                       MYSINELUT/blk00000002_Narrowed
+    -------------------------------------------------  ---------------------------
+    Total                                      1.134ns (0.474ns logic, 0.660ns route)
+                                                       (41.8% logic, 58.2% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_MYDCM_CLK2X_BUF = PERIOD TIMEGRP "MYDCM_CLK2X_BUF" TS_clk_50 / 2 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 7.986ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 1.007ns (Twpl)
+  Physical resource: sine<1>/CLK
+  Logical resource: MYSINELUT/blk00000008_Narrowed/WS
+  Location pin: SLICE_X52Y34.CLK
+  Clock network: CLK2X_OUT
+--------------------------------------------------------------------------------
+Slack: 7.986ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 1.007ns (Twph)
+  Physical resource: sine<1>/CLK
+  Logical resource: MYSINELUT/blk00000008_Narrowed/WS
+  Location pin: SLICE_X52Y34.CLK
+  Clock network: CLK2X_OUT
+--------------------------------------------------------------------------------
+Slack: 7.986ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.014ns (496.524MHz) (Tcp)
+  Physical resource: sine<1>/CLK
+  Logical resource: MYSINELUT/blk00000008_Narrowed/WS
+  Location pin: SLICE_X52Y34.CLK
+  Clock network: CLK2X_OUT
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_clk_50
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_clk_50                      |     20.000ns|      7.326ns|     15.812ns|            0|            0|          553|         1611|
+| TS_MYDCM_CLK2X_BUF            |     10.000ns|      7.906ns|          N/A|            0|            0|         1611|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk_50
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_50         |    7.906|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 2164 paths, 0 nets, and 294 connections
+
+Design statistics:
+   Minimum period:   7.906ns{1}   (Maximum frequency: 126.486MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Aug 11 20:15:17 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 177 MB
+
+
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/VHDL Projects/Lab1/lab1_top_isim_beh.exe" -prj "D:/VHDL Projects/Lab1/lab1_top_beh.prj" "work.lab1_top" 

@@ -1,0 +1,12 @@
+V3 8
+FL "D:/VHDL Projects/Lab1/lab1_top.vhd" 2015/06/02.18:52:53 P.20131013
+EN work/lab1_top 1433451424 FL "D:/VHDL Projects/Lab1/lab1_top.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB work
+AR work/lab1_top/Behavioral 1433451425 \
+      FL "D:/VHDL Projects/Lab1/lab1_top.vhd" EN work/lab1_top 1433451424 \
+      CP work/seg7_hex
+FL "D:/VHDL Projects/Lab1/seg7_hex.vhd" 2015/06/04.16:27:56 P.20131013
+EN work/seg7_hex 1433451422 FL "D:/VHDL Projects/Lab1/seg7_hex.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB work
+AR work/seg7_hex/Behavioral 1433451423 \
+      FL "D:/VHDL Projects/Lab1/seg7_hex.vhd" EN work/seg7_hex 1433451422

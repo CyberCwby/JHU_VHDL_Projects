@@ -1,0 +1,32 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Aug 12 16:28:08 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led" LOCATE = SITE "J14" LEVEL 1;
+COMP "anodes<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "anodes<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "anodes<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "anodes<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "sliderSwitches<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "sliderSwitches<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "sliderSwitches<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "sliderSwitches<3>" LOCATE = SITE "K17" LEVEL 1;
+COMP "sliderSwitches<4>" LOCATE = SITE "L14" LEVEL 1;
+COMP "sliderSwitches<5>" LOCATE = SITE "L13" LEVEL 1;
+COMP "sliderSwitches<6>" LOCATE = SITE "N17" LEVEL 1;
+COMP "sliderSwitches<7>" LOCATE = SITE "R17" LEVEL 1;
+COMP "seg7<0>" LOCATE = SITE "L18" LEVEL 1;
+COMP "seg7<1>" LOCATE = SITE "F18" LEVEL 1;
+COMP "seg7<2>" LOCATE = SITE "D17" LEVEL 1;
+COMP "seg7<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "seg7<4>" LOCATE = SITE "G14" LEVEL 1;
+COMP "seg7<5>" LOCATE = SITE "J17" LEVEL 1;
+COMP "seg7<6>" LOCATE = SITE "H14" LEVEL 1;
+COMP "pushButton" LOCATE = SITE "B18" LEVEL 1;
+COMP "clk_32" LOCATE = SITE "U9" LEVEL 1;
+COMP "clk_50" LOCATE = SITE "B8" LEVEL 1;
+NET "clk_32_BUFGP/IBUFG" BEL "clk_32_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "clk_50_BUFGP/IBUFG" BEL "clk_50_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

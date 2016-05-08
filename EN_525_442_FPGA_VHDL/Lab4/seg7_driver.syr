@@ -1,0 +1,461 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: seg7_driver.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "seg7_driver.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "seg7_driver"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : seg7_driver
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/VHDL Projects/Lab4/seg7_hex.vhd" in Library work.
+Entity <seg7_hex> compiled.
+Entity <seg7_hex> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/VHDL Projects/Lab4/pulseGenerator.vhd" in Library work.
+Entity <pulseGenerator> compiled.
+Entity <pulseGenerator> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/VHDL Projects/Lab4/twoBitUpCounter.vhd" in Library work.
+Entity <twoBitUpCounter> compiled.
+Entity <twoBitUpCounter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/VHDL Projects/Lab4/seg7_driver.vhd" in Library work.
+Entity <seg7_driver> compiled.
+Entity <seg7_driver> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <seg7_driver> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <seg7_hex> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <pulseGenerator> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <twoBitUpCounter> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <seg7_driver> in library <work> (Architecture <Behavioral>).
+Entity <seg7_driver> analyzed. Unit <seg7_driver> generated.
+
+Analyzing Entity <seg7_hex> in library <work> (Architecture <Behavioral>).
+Entity <seg7_hex> analyzed. Unit <seg7_hex> generated.
+
+Analyzing Entity <pulseGenerator> in library <work> (Architecture <Behavioral>).
+Entity <pulseGenerator> analyzed. Unit <pulseGenerator> generated.
+
+Analyzing Entity <twoBitUpCounter> in library <work> (Architecture <Behavioral>).
+Entity <twoBitUpCounter> analyzed. Unit <twoBitUpCounter> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <seg7_hex>.
+    Related source file is "D:/VHDL Projects/Lab4/seg7_hex.vhd".
+    Found 16x7-bit ROM for signal <seg7>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <seg7_hex> synthesized.
+
+
+Synthesizing Unit <pulseGenerator>.
+    Related source file is "D:/VHDL Projects/Lab4/pulseGenerator.vhd".
+    Found 16-bit up counter for signal <cntrSig>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <pulseGenerator> synthesized.
+
+
+Synthesizing Unit <twoBitUpCounter>.
+    Related source file is "D:/VHDL Projects/Lab4/twoBitUpCounter.vhd".
+    Found 2-bit up counter for signal <cntr2Sig>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <twoBitUpCounter> synthesized.
+
+
+Synthesizing Unit <seg7_driver>.
+    Related source file is "D:/VHDL Projects/Lab4/seg7_driver.vhd".
+    Found 4-bit register for signal <charToDisplay>.
+    Found 4-bit 4-to-1 multiplexer for signal <charToDisplay$mux0003>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <seg7_driver> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 1
+ 4-bit register                                        : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <seg7_driver> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block seg7_driver, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 22
+ Flip-Flops                                            : 22
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : seg7_driver.ngr
+Top Level Output File Name         : seg7_driver
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 29
+
+Cell Usage :
+# BELS                             : 96
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 15
+#      LUT2                        : 17
+#      LUT3                        : 12
+#      LUT4                        : 12
+#      LUT4_D                      : 1
+#      MUXCY                       : 15
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 22
+#      FDC                         : 16
+#      FDCE                        : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 28
+#      IBUF                        : 17
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       31  out of   4656     0%  
+ Number of Slice Flip Flops:             22  out of   9312     0%  
+ Number of 4 input LUTs:                 59  out of   9312     0%  
+ Number of IOs:                          29
+ Number of bonded IOBs:                  29  out of    232    12%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk50                              | BUFGP                  | 22    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 22    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.463ns (Maximum Frequency: 183.050MHz)
+   Minimum input arrival time before clock: 3.050ns
+   Maximum output required time after clock: 6.066ns
+   Maximum combinational path delay: 7.049ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk50'
+  Clock period: 5.463ns (frequency: 183.050MHz)
+  Total number of paths / destination ports: 503 / 28
+-------------------------------------------------------------------------
+Delay:               5.463ns (Levels of Logic = 17)
+  Source:            PULSE1KHZGEN/cntrSig_1 (FF)
+  Destination:       PULSE1KHZGEN/cntrSig_15 (FF)
+  Source Clock:      clk50 rising
+  Destination Clock: clk50 rising
+
+  Data Path: PULSE1KHZGEN/cntrSig_1 to PULSE1KHZGEN/cntrSig_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  PULSE1KHZGEN/cntrSig_1 (PULSE1KHZGEN/cntrSig_1)
+     LUT1:I0->O            1   0.704   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<1>_rt (PULSE1KHZGEN/Mcount_cntrSig_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<1> (PULSE1KHZGEN/Mcount_cntrSig_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<2> (PULSE1KHZGEN/Mcount_cntrSig_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<3> (PULSE1KHZGEN/Mcount_cntrSig_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<4> (PULSE1KHZGEN/Mcount_cntrSig_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<5> (PULSE1KHZGEN/Mcount_cntrSig_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<6> (PULSE1KHZGEN/Mcount_cntrSig_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<7> (PULSE1KHZGEN/Mcount_cntrSig_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<8> (PULSE1KHZGEN/Mcount_cntrSig_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<9> (PULSE1KHZGEN/Mcount_cntrSig_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<10> (PULSE1KHZGEN/Mcount_cntrSig_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<11> (PULSE1KHZGEN/Mcount_cntrSig_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<12> (PULSE1KHZGEN/Mcount_cntrSig_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<13> (PULSE1KHZGEN/Mcount_cntrSig_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  PULSE1KHZGEN/Mcount_cntrSig_cy<14> (PULSE1KHZGEN/Mcount_cntrSig_cy<14>)
+     XORCY:CI->O           1   0.804   0.499  PULSE1KHZGEN/Mcount_cntrSig_xor<15> (Result<15>)
+     LUT2:I1->O            1   0.704   0.000  PULSE1KHZGEN/Mcount_cntrSig_eqn_151 (PULSE1KHZGEN/Mcount_cntrSig_eqn_15)
+     FDC:D                     0.308          PULSE1KHZGEN/cntrSig_15
+    ----------------------------------------
+    Total                      5.463ns (4.342ns logic, 1.121ns route)
+                                       (79.5% logic, 20.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk50'
+  Total number of paths / destination ports: 16 / 4
+-------------------------------------------------------------------------
+Offset:              3.050ns (Levels of Logic = 3)
+  Source:            char0<0> (PAD)
+  Destination:       charToDisplay_0 (FF)
+  Destination Clock: clk50 rising
+
+  Data Path: char0<0> to charToDisplay_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.499  char0_0_IBUF (char0_0_IBUF)
+     LUT3:I1->O            1   0.704   0.000  Mmux_charToDisplay_mux0003_4 (Mmux_charToDisplay_mux0003_4)
+     MUXF5:I0->O           1   0.321   0.000  Mmux_charToDisplay_mux0003_2_f5 (charToDisplay_mux0003<0>)
+     FDCE:D                    0.308          charToDisplay_0
+    ----------------------------------------
+    Total                      3.050ns (2.551ns logic, 0.499ns route)
+                                       (83.6% logic, 16.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk50'
+  Total number of paths / destination ports: 36 / 11
+-------------------------------------------------------------------------
+Offset:              6.066ns (Levels of Logic = 2)
+  Source:            CURRCHAR/cntr2Sig_0 (FF)
+  Destination:       anodes<3> (PAD)
+  Source Clock:      clk50 rising
+
+  Data Path: CURRCHAR/cntr2Sig_0 to anodes<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            14   0.591   1.079  CURRCHAR/cntr2Sig_0 (CURRCHAR/cntr2Sig_0)
+     LUT3:I1->O            1   0.704   0.420  anodes<3>1 (anodes_3_OBUF)
+     OBUF:I->O                 3.272          anodes_3_OBUF (anodes<3>)
+    ----------------------------------------
+    Total                      6.066ns (4.567ns logic, 1.499ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               7.049ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       anodes<3> (PAD)
+
+  Data Path: reset to anodes<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   1.218   1.435  reset_IBUF (reset_IBUF)
+     LUT3:I0->O            1   0.704   0.420  anodes<3>1 (anodes_3_OBUF)
+     OBUF:I->O                 3.272          anodes_3_OBUF (anodes<3>)
+    ----------------------------------------
+    Total                      7.049ns (5.194ns logic, 1.855ns route)
+                                       (73.7% logic, 26.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.22 secs
+ 
+--> 
+
+Total memory usage is 247548 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

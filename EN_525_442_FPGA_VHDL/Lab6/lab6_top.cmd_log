@@ -1,0 +1,184 @@
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+xst -intstyle ise -ifn "D:/VHDL Projects/Lab6/lab6_top.xst" -ofn "D:/VHDL Projects/Lab6/lab6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_constraints.ucf -p xc3s500e-fg320-4 "lab6_top.ngc" lab6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_top_map.ncd lab6_top.ngd lab6_top.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_top_map.ncd lab6_top.ncd lab6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_top.twx lab6_top.ncd -o lab6_top.twr lab6_top.pcf -ucf lab6_constraints.ucf 
+bitgen -intstyle ise -f lab6_top.ut lab6_top.ncd 

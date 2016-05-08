@@ -1,0 +1,16 @@
+AR upcounter behavioral "D:/VHDL Projects/Lab6/upCounter.vhd" sub00/vhpl13 1436914249
+EN seg7_hex NULL "D:/VHDL Projects/Lab6/seg7_hex.vhd" sub00/vhpl00 1436914238
+EN upcounter NULL "D:/VHDL Projects/Lab6/upCounter.vhd" sub00/vhpl12 1436914248
+AR seg7_hex behavioral "D:/VHDL Projects/Lab6/seg7_hex.vhd" sub00/vhpl01 1436914239
+EN seg7_driver NULL "D:/VHDL Projects/Lab6/seg7_driver.vhd" sub00/vhpl08 1436914246
+AR debouncer behavioral "D:/VHDL Projects/Lab6/debouncer.vhd" sub00/vhpl07 1436914245
+EN lab6_top NULL "D:/VHDL Projects/Lab6/lab6_top.vhd" sub00/vhpl10 1436914252
+EN twobitupcounter NULL "D:/VHDL Projects/Lab6/twoBitUpCounter.vhd" sub00/vhpl04 1436914242
+AR lab6_top behavioral "D:/VHDL Projects/Lab6/lab6_top.vhd" sub00/vhpl11 1436914253
+AR seg7_driver behavioral "D:/VHDL Projects/Lab6/seg7_driver.vhd" sub00/vhpl09 1436914247
+AR readcounter behavioral "D:/VHDL Projects/Lab6/readCounter.vhd" sub00/vhpl15 1436914251
+EN readcounter NULL "D:/VHDL Projects/Lab6/readCounter.vhd" sub00/vhpl14 1436914250
+AR twobitupcounter behavioral "D:/VHDL Projects/Lab6/twoBitUpCounter.vhd" sub00/vhpl05 1436914243
+AR pulsegenerator behavioral "D:/VHDL Projects/Lab6/pulseGenerator.vhd" sub00/vhpl03 1436914241
+EN debouncer NULL "D:/VHDL Projects/Lab6/debouncer.vhd" sub00/vhpl06 1436914244
+EN pulsegenerator NULL "D:/VHDL Projects/Lab6/pulseGenerator.vhd" sub00/vhpl02 1436914240

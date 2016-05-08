@@ -1,0 +1,29 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/VHDL Projects/Lab3/top_level_isim_beh.exe -prj D:/VHDL Projects/Lab3/top_level_beh.prj work.top_level 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/VHDL Projects/Lab3/twoBitUpCounter.vhd" into library work
+Parsing VHDL file "D:/VHDL Projects/Lab3/seg7_hex.vhd" into library work
+Parsing VHDL file "D:/VHDL Projects/Lab3/pulseGenerator.vhd" into library work
+Parsing VHDL file "D:/VHDL Projects/Lab3/flipFlop.vhd" into library work
+Parsing VHDL file "D:/VHDL Projects/Lab3/shiftRegister.vhdl" into library work
+Parsing VHDL file "D:/VHDL Projects/Lab3/seg7_driver.vhd" into library work
+Parsing VHDL file "D:/VHDL Projects/Lab3/top_level.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity flipFlop [flipflop_default]
+Compiling architecture behavioral of entity shiftRegister [shiftregister_default]
+Compiling architecture behavioral of entity seg7_hex [seg7_hex_default]
+Compiling architecture behavioral of entity pulseGenerator [pulsegenerator_default]
+Compiling architecture behavioral of entity twoBitUpCounter [twobitupcounter_default]
+Compiling architecture behavioral of entity seg7_driver [seg7_driver_default]
+Compiling architecture behavioral of entity top_level
+Time Resolution for simulation is 1ps.
+Compiled 16 VHDL Units
+Built simulation executable D:/VHDL Projects/Lab3/top_level_isim_beh.exe
+Fuse Memory Usage: 34160 KB
+Fuse CPU Usage: 578 ms
