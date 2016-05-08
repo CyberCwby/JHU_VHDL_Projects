@@ -1,0 +1,23 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/IR2.vhd"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/decode5.vhd"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/mem_buffer.vhd"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/reg_File.vhdl"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/reg.vhdl"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/PC2reg.vhd"
+vhdl xil_defaultlib  "../../../PC.vhdl"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/mux_3_1.vhdl"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/mux_2_1.vhdl"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/IR3.vhdl"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/instMem.vhdl"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/inc4.vhd"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/decode4.vhd"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/decode3.vhd"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/dataMem.vhd"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/branchLogic.vhd"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/ALU.vhd"
+vhdl xil_defaultlib  "../../../top_src.vhdl"
+vhdl xil_defaultlib  "../../../PipelinedSRC.srcs/sources_1/new/tb_top_src.vhdl"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,35 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 155984185a7b489696a02b933cafc701 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_top_src_behav xil_defaultlib.cfg_tb_top_src -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.instMem [instmem_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.inc4 [inc4_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_1 [\mux_2_1(32)\]
+Compiling architecture behavioral of entity xil_defaultlib.PC2reg [pc2reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_1 [\mux_2_1(5)\]
+Compiling architecture behavioral of entity xil_defaultlib.IR2 [ir2_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_File [reg_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.branchLogic [branchlogic_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_3_1 [mux_3_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.IR3 [ir3_default]
+Compiling architecture behavioral of entity xil_defaultlib.decode3 [decode3_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.decode4 [decode4_default]
+Compiling architecture behavioral of entity xil_defaultlib.dataMem [datamem_default]
+Compiling architecture behavioral of entity xil_defaultlib.mem_buffer [mem_buffer_default]
+Compiling architecture behavioral of entity xil_defaultlib.decode5 [decode5_default]
+Compiling architecture structure of entity xil_defaultlib.top_src [top_src_default]
+Compiling architecture tb of entity xil_defaultlib.tb_top_src [tb_top_src]
+Built simulation snapshot cfg_tb_top_src_behav

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cfg_tb_top_src_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_top_src" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2388880000fs"></ZoomStartTime>
+      <ZoomEndTime time="7888880001fs"></ZoomEndTime>
+      <Cursor1Time time="5428880000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="16" />
+   <wvobject type="divider" fp_name="divider797">
+      <obj_property name="label">IR5</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg5/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg5/op_in" type="array">
+      <obj_property name="ElementShortName">op_in[4:0]</obj_property>
+      <obj_property name="ObjectShortName">op_in[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg5/ra_in" type="array">
+      <obj_property name="ElementShortName">ra_in[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ra_in[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg5/op_out" type="array">
+      <obj_property name="ElementShortName">op_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">op_out[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg5/ra_out" type="array">
+      <obj_property name="ElementShortName">ra_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ra_out[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider798">
+      <obj_property name="label">Decoder5</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Decoder5/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Decoder5/op" type="array">
+      <obj_property name="ElementShortName">op[4:0]</obj_property>
+      <obj_property name="ObjectShortName">op[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Decoder5/W3" type="logic">
+      <obj_property name="ElementShortName">W3</obj_property>
+      <obj_property name="ObjectShortName">W3</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Decoder5/W3_sig" type="logic">
+      <obj_property name="ElementShortName">W3_sig</obj_property>
+      <obj_property name="ObjectShortName">W3_sig</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider799">
+      <obj_property name="label">Z5</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Z5/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Z5/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Z5/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Z5/data" type="array">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+</wave_config>

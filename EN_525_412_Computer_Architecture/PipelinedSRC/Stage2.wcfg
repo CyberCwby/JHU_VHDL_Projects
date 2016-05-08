@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cfg_tb_top_src_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_top_src" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1000000000fs"></ZoomStartTime>
+      <ZoomEndTime time="3750000002fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="91" />
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/d" type="array">
+      <obj_property name="ElementShortName">d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/address" type="array">
+      <obj_property name="ElementShortName">address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">address[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/read" type="logic">
+      <obj_property name="ElementShortName">read</obj_property>
+      <obj_property name="ObjectShortName">read</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/write" type="logic">
+      <obj_property name="ElementShortName">write</obj_property>
+      <obj_property name="ObjectShortName">write</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/TbClock" type="logic">
+      <obj_property name="ElementShortName">TbClock</obj_property>
+      <obj_property name="ObjectShortName">TbClock</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/TbPeriod" type="other">
+      <obj_property name="ElementShortName">TbPeriod</obj_property>
+      <obj_property name="ObjectShortName">TbPeriod</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider202">
+      <obj_property name="label">RegFile</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/registers/a1address" type="array">
+      <obj_property name="ElementShortName">a1address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">a1address[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/registers/a2address" type="array">
+      <obj_property name="ElementShortName">a2address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">a2address[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/registers/a3address" type="array">
+      <obj_property name="ElementShortName">a3address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">a3address[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/registers/R3data" type="array">
+      <obj_property name="ElementShortName">R3data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">R3data[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/registers/R1data" type="array">
+      <obj_property name="ElementShortName">R1data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">R1data[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/registers/R2data" type="array">
+      <obj_property name="ElementShortName">R2data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">R2data[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/registers/G1" type="logic">
+      <obj_property name="ElementShortName">G1</obj_property>
+      <obj_property name="ObjectShortName">G1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/registers/GA1" type="logic">
+      <obj_property name="ElementShortName">GA1</obj_property>
+      <obj_property name="ObjectShortName">GA1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/registers/G2" type="logic">
+      <obj_property name="ElementShortName">G2</obj_property>
+      <obj_property name="ObjectShortName">G2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/registers/W3" type="logic">
+      <obj_property name="ElementShortName">W3</obj_property>
+      <obj_property name="ObjectShortName">W3</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/registers/registers" type="array">
+      <obj_property name="ElementShortName">registers[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider214">
+      <obj_property name="label">IR2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/instructionReg" type="array">
+      <obj_property name="ElementShortName">instructionReg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instructionReg[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/op" type="array">
+      <obj_property name="ElementShortName">op[4:0]</obj_property>
+      <obj_property name="ObjectShortName">op[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/ra" type="array">
+      <obj_property name="ElementShortName">ra[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ra[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/rb" type="array">
+      <obj_property name="ElementShortName">rb[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rb[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/rc" type="array">
+      <obj_property name="ElementShortName">rc[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rc[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/c1" type="array">
+      <obj_property name="ElementShortName">c1[21:0]</obj_property>
+      <obj_property name="ObjectShortName">c1[21:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/c2" type="array">
+      <obj_property name="ElementShortName">c2[16:0]</obj_property>
+      <obj_property name="ObjectShortName">c2[16:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/c3" type="array">
+      <obj_property name="ElementShortName">c3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">c3[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/G1" type="logic">
+      <obj_property name="ElementShortName">G1</obj_property>
+      <obj_property name="ObjectShortName">G1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/GA1" type="logic">
+      <obj_property name="ElementShortName">GA1</obj_property>
+      <obj_property name="ObjectShortName">GA1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/G2" type="logic">
+      <obj_property name="ElementShortName">G2</obj_property>
+      <obj_property name="ObjectShortName">G2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/Mp3" type="logic">
+      <obj_property name="ElementShortName">Mp3</obj_property>
+      <obj_property name="ObjectShortName">Mp3</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/Mp4" type="array">
+      <obj_property name="ElementShortName">Mp4[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Mp4[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/imm2" type="logic">
+      <obj_property name="ElementShortName">imm2</obj_property>
+      <obj_property name="ObjectShortName">imm2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/alu2" type="logic">
+      <obj_property name="ElementShortName">alu2</obj_property>
+      <obj_property name="ObjectShortName">alu2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/rel2" type="logic">
+      <obj_property name="ElementShortName">rel2</obj_property>
+      <obj_property name="ObjectShortName">rel2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/dsp2" type="logic">
+      <obj_property name="ElementShortName">dsp2</obj_property>
+      <obj_property name="ObjectShortName">dsp2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/store2" type="logic">
+      <obj_property name="ElementShortName">store2</obj_property>
+      <obj_property name="ObjectShortName">store2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/branch2" type="logic">
+      <obj_property name="ElementShortName">branch2</obj_property>
+      <obj_property name="ObjectShortName">branch2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/brl2" type="logic">
+      <obj_property name="ElementShortName">brl2</obj_property>
+      <obj_property name="ObjectShortName">brl2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/opCode" type="array">
+      <obj_property name="ElementShortName">opCode[4:0]</obj_property>
+      <obj_property name="ObjectShortName">opCode[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/ra_sig" type="array">
+      <obj_property name="ElementShortName">ra_sig[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ra_sig[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/rb_sig" type="array">
+      <obj_property name="ElementShortName">rb_sig[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rb_sig[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/rc_sig" type="array">
+      <obj_property name="ElementShortName">rc_sig[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rc_sig[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/c1_sig" type="array">
+      <obj_property name="ElementShortName">c1_sig[21:0]</obj_property>
+      <obj_property name="ObjectShortName">c1_sig[21:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/c2_sig" type="array">
+      <obj_property name="ElementShortName">c2_sig[16:0]</obj_property>
+      <obj_property name="ObjectShortName">c2_sig[16:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/c3_sig" type="array">
+      <obj_property name="ElementShortName">c3_sig[2:0]</obj_property>
+      <obj_property name="ObjectShortName">c3_sig[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/G1_sig" type="logic">
+      <obj_property name="ElementShortName">G1_sig</obj_property>
+      <obj_property name="ObjectShortName">G1_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/GA1_sig" type="logic">
+      <obj_property name="ElementShortName">GA1_sig</obj_property>
+      <obj_property name="ObjectShortName">GA1_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/G2_sig" type="logic">
+      <obj_property name="ElementShortName">G2_sig</obj_property>
+      <obj_property name="ObjectShortName">G2_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/imm2_sig" type="logic">
+      <obj_property name="ElementShortName">imm2_sig</obj_property>
+      <obj_property name="ObjectShortName">imm2_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/alu2_sig" type="logic">
+      <obj_property name="ElementShortName">alu2_sig</obj_property>
+      <obj_property name="ObjectShortName">alu2_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/rel2_sig" type="logic">
+      <obj_property name="ElementShortName">rel2_sig</obj_property>
+      <obj_property name="ObjectShortName">rel2_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/dsp2_sig" type="logic">
+      <obj_property name="ElementShortName">dsp2_sig</obj_property>
+      <obj_property name="ObjectShortName">dsp2_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/store2_sig" type="logic">
+      <obj_property name="ElementShortName">store2_sig</obj_property>
+      <obj_property name="ObjectShortName">store2_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/branch2_sig" type="logic">
+      <obj_property name="ElementShortName">branch2_sig</obj_property>
+      <obj_property name="ObjectShortName">branch2_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/brl2_sig" type="logic">
+      <obj_property name="ElementShortName">brl2_sig</obj_property>
+      <obj_property name="ObjectShortName">brl2_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/mp3_sig" type="logic">
+      <obj_property name="ElementShortName">mp3_sig</obj_property>
+      <obj_property name="ObjectShortName">mp3_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/InstReg2/mp4_sig" type="array">
+      <obj_property name="ElementShortName">mp4_sig[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mp4_sig[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider255">
+      <obj_property name="label">Mp2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp2_mux/sel" type="logic">
+      <obj_property name="ElementShortName">sel</obj_property>
+      <obj_property name="ObjectShortName">sel</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp2_mux/input1" type="array">
+      <obj_property name="ElementShortName">input1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">input1[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp2_mux/input0" type="array">
+      <obj_property name="ElementShortName">input0[4:0]</obj_property>
+      <obj_property name="ObjectShortName">input0[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp2_mux/output" type="array">
+      <obj_property name="ElementShortName">output[4:0]</obj_property>
+      <obj_property name="ObjectShortName">output[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp2_mux/N" type="other">
+      <obj_property name="ElementShortName">N</obj_property>
+      <obj_property name="ObjectShortName">N</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider260">
+      <obj_property name="label">Mp3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp3_mux/sel" type="logic">
+      <obj_property name="ElementShortName">sel</obj_property>
+      <obj_property name="ObjectShortName">sel</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp3_mux/input1" type="array">
+      <obj_property name="ElementShortName">input1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input1[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp3_mux/input0" type="array">
+      <obj_property name="ElementShortName">input0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input0[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp3_mux/output" type="array">
+      <obj_property name="ElementShortName">output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">output[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp3_mux/N" type="other">
+      <obj_property name="ElementShortName">N</obj_property>
+      <obj_property name="ObjectShortName">N</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider261">
+      <obj_property name="label">Mp4</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp4_mux/sel" type="array">
+      <obj_property name="ElementShortName">sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp4_mux/input2" type="array">
+      <obj_property name="ElementShortName">input2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input2[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp4_mux/input1" type="array">
+      <obj_property name="ElementShortName">input1[16:0]</obj_property>
+      <obj_property name="ObjectShortName">input1[16:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp4_mux/input0" type="array">
+      <obj_property name="ElementShortName">input0[21:0]</obj_property>
+      <obj_property name="ObjectShortName">input0[21:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Mp4_mux/output" type="array">
+      <obj_property name="ElementShortName">output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">output[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider277">
+      <obj_property name="label">Branch Logic</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/BranchLog/c3" type="array">
+      <obj_property name="ElementShortName">c3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">c3[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/BranchLog/rc" type="array">
+      <obj_property name="ElementShortName">rc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rc[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/BranchLog/branch" type="logic">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/BranchLog/Mp1" type="logic">
+      <obj_property name="ElementShortName">Mp1</obj_property>
+      <obj_property name="ObjectShortName">Mp1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/BranchLog/cond" type="logic">
+      <obj_property name="ElementShortName">cond</obj_property>
+      <obj_property name="ObjectShortName">cond</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Decoder5/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Decoder5/op" type="array">
+      <obj_property name="ElementShortName">op[4:0]</obj_property>
+      <obj_property name="ObjectShortName">op[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Decoder5/W3" type="logic">
+      <obj_property name="ElementShortName">W3</obj_property>
+      <obj_property name="ObjectShortName">W3</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_top_src/dut/Decoder5/W3_sig" type="logic">
+      <obj_property name="ElementShortName">W3_sig</obj_property>
+      <obj_property name="ObjectShortName">W3_sig</obj_property>
+   </wvobject>
+</wave_config>
